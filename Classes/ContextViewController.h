@@ -34,7 +34,9 @@
 
 @interface ContextViewController : UIViewController
 {
-    IBOutlet MKMapView *mapView;
+    MKMapView *mapView;
 }
+
+@property (nonatomic,retain) IBOutlet MKMapView *mapView;
 
 @end

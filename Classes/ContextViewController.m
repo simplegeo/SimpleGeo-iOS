@@ -33,4 +33,6 @@
 
 @implementation ContextViewController
 
+@synthesize mapView;
+
 @end
