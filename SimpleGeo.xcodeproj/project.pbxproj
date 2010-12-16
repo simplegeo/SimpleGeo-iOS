@@ -68,8 +68,6 @@
 			children = (
 				1D3623240D0F684500981E51 /* SimpleGeoAppDelegate.h */,
 				1D3623250D0F684500981E51 /* SimpleGeoAppDelegate.m */,
-				5DAF7F4712B03CCC0015D272 /* UIToolBar+CustomTexture.h */,
-				5DAF7F4812B03CCC0015D272 /* UIToolBar+CustomTexture.m */,
 				5DAF7F9912B070B20015D272 /* ContextViewController.h */,
 				5DAF7F9A12B070B20015D272 /* ContextViewController.m */,
 				5DAF7FC012B0814C0015D272 /* PlacesMapViewController.h */,
@@ -195,7 +193,6 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* SimpleGeoAppDelegate.m in Sources */,
-				5DAF7F4912B03CCC0015D272 /* UIToolBar+CustomTexture.m in Sources */,
 				5DAF7F9B12B070B20015D272 /* ContextViewController.m in Sources */,
 				5DAF7FBF12B081220015D272 /* PlacesListViewController.m in Sources */,
 				5DAF7FC212B0814C0015D272 /* PlacesMapViewController.m in Sources */,
