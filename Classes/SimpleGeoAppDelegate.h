@@ -28,13 +28,19 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
+#import "CLController.h"
 
-@interface SimpleGeoAppDelegate : NSObject <UIApplicationDelegate>
+
+@interface SimpleGeoAppDelegate : NSObject <UIApplicationDelegate, CLLocationManagerDelegate>
 {
+    CLLocation *lastLocation;
+    CLLocationManager *locationManager;
     UIWindow *window;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic,retain) CLLocation *lastLocation;
+@property (nonatomic,readonly) CLLocationManager *locationManager;
+@property (nonatomic,retain) IBOutlet UIWindow *window;
 
 @end
 

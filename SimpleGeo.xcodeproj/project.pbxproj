@@ -15,7 +15,7 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		5D55A61412BA9845004AE0EB /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A61312BA9845004AE0EB /* RootNavigationController.m */; };
 		5D55A61712BA9BB1004AE0EB /* PlacesNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A61612BA9BB1004AE0EB /* PlacesNavigationController.m */; };
-		5DAF7F4912B03CCC0015D272 /* UIToolBar+CustomTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7F4812B03CCC0015D272 /* UIToolBar+CustomTexture.m */; };
+		5D55A6A012BAD92C004AE0EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A69F12BAD92C004AE0EB /* CoreLocation.framework */; };
 		5DAF7F7C12B06F5F0015D272 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAF7F7B12B06F5F0015D272 /* MapKit.framework */; };
 		5DAF7F9B12B070B20015D272 /* ContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7F9A12B070B20015D272 /* ContextViewController.m */; };
 		5DAF7FBF12B081220015D272 /* PlacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7FBE12B081220015D272 /* PlacesListViewController.m */; };
@@ -36,8 +36,7 @@
 		5D55A61312BA9845004AE0EB /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		5D55A61512BA9BB1004AE0EB /* PlacesNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesNavigationController.h; sourceTree = "<group>"; };
 		5D55A61612BA9BB1004AE0EB /* PlacesNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesNavigationController.m; sourceTree = "<group>"; };
-		5DAF7F4712B03CCC0015D272 /* UIToolBar+CustomTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolBar+CustomTexture.h"; sourceTree = "<group>"; };
-		5DAF7F4812B03CCC0015D272 /* UIToolBar+CustomTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolBar+CustomTexture.m"; sourceTree = "<group>"; };
+		5D55A69F12BAD92C004AE0EB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5DAF7F7B12B06F5F0015D272 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5DAF7F9912B070B20015D272 /* ContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextViewController.h; sourceTree = "<group>"; };
 		5DAF7F9A12B070B20015D272 /* ContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextViewController.m; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				5DAF7F7C12B06F5F0015D272 /* MapKit.framework in Frameworks */,
+				5D55A6A012BAD92C004AE0EB /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +127,7 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				5DAF7F7B12B06F5F0015D272 /* MapKit.framework */,
+				5D55A69F12BAD92C004AE0EB /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
