@@ -33,4 +33,16 @@
 
 @implementation PlacesMapViewController
 
+@synthesize locationController;
+@synthesize mapView;
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+    CLLocation *lastLocation = [locationController lastLocation];
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([lastLocation coordinate], 1000.0, 1000.0);
+    [self.mapView setRegion:region];
+}
+
 @end

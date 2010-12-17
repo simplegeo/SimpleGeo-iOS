@@ -29,13 +29,16 @@
 //
 
 #import <MapKit/MapKit.h>
+#import "CLController.h"
 
 
 @interface ContextViewController : UIViewController
 {
+    CLController *locationController;
     MKMapView *mapView;
 }
 
+@property (nonatomic,retain) IBOutlet CLController *locationController;
 @property (nonatomic,retain) IBOutlet MKMapView *mapView;
 
 @end

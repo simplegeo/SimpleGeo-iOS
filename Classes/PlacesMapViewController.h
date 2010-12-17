@@ -28,10 +28,17 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
+#import <MapKit/MapKit.h>
+#import "CLController.h"
+
 
 @interface PlacesMapViewController : UIViewController
 {
-
+    CLController *locationController;
+    MKMapView *mapView;
 }
+
+@property (nonatomic,retain) IBOutlet CLController *locationController;
+@property (nonatomic,retain) IBOutlet MKMapView *mapView;
 
 @end

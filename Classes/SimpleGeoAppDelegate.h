@@ -33,13 +33,11 @@
 
 @interface SimpleGeoAppDelegate : NSObject <UIApplicationDelegate, CLLocationManagerDelegate>
 {
-    CLLocation *lastLocation;
-    CLLocationManager *locationManager;
+    CLController *locationController;
     UIWindow *window;
 }
 
-@property (nonatomic,retain) CLLocation *lastLocation;
-@property (nonatomic,readonly) CLLocationManager *locationManager;
+@property (nonatomic,readonly) IBOutlet CLController *locationController;
 @property (nonatomic,retain) IBOutlet UIWindow *window;
 
 @end

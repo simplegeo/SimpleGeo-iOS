@@ -32,23 +32,9 @@
 
 @implementation SimpleGeoAppDelegate
 
-@synthesize lastLocation;
-@synthesize locationManager;
+@synthesize locationController;
 @synthesize window;
 
-- (void)locationManager:(CLLocationManager *)manager
-    didUpdateToLocation:(CLLocation *)newLocation
-           fromLocation:(CLLocation *)oldLocation
-{
-    NSLog(@"Location: %@", [newLocation description]);
-    [self setLastLocation:newLocation];
-}
-
-- (void)locationManager:(CLLocationManager *)manager
-       didFailWithError:(NSError *)error
-{
-	NSLog(@"Error: %@", [error description]);
-}
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -58,8 +44,6 @@
     // Override point for customization after application launch.
     [application setStatusBarStyle:UIStatusBarStyleBlackOpaque
                           animated:NO];
-    locationManager = [[CLLocationManager alloc] init];
-    [locationManager setDelegate:self];
 
     [self.window makeKeyAndVisible];
 
@@ -88,7 +72,7 @@
      applicationWillTerminate: when the user quits.
      */
 
-    [self.locationManager stopUpdatingLocation];
+    [self.locationController stopUpdatingLocation];
 }
 
 
@@ -107,7 +91,7 @@
      background, optionally refresh the user interface.
      */
 
-    [self.locationManager startUpdatingLocation];
+    [self.locationController startUpdatingLocation];
 }
 
 
@@ -117,7 +101,7 @@
      See also applicationDidEnterBackground:.
      */
 
-    [self.locationManager stopUpdatingLocation];
+    [self.locationController stopUpdatingLocation];
 }
 
 
@@ -133,8 +117,7 @@
 
 
 - (void)dealloc {
-    [lastLocation release];
-    [locationManager release];
+    [locationController release];
     [window release];
     [super dealloc];
 }

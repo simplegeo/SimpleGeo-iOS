@@ -33,18 +33,14 @@
 
 @implementation ContextViewController
 
+@synthesize locationController;
 @synthesize mapView;
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
 
-    // TODO do this a better way, like a shared LocationController object that
-    // everything else can get a pointer to via Interface Builder
-
-    SimpleGeoAppDelegate *appDelegate = (SimpleGeoAppDelegate *)[[UIApplication sharedApplication] delegate];
-    CLLocation *lastLocation = [appDelegate lastLocation];
-
+    CLLocation *lastLocation = [locationController lastLocation];
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([lastLocation coordinate], 1000.0, 1000.0);
     [self.mapView setRegion:region];
 }

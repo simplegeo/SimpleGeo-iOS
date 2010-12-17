@@ -16,6 +16,7 @@
 		5D55A61412BA9845004AE0EB /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A61312BA9845004AE0EB /* RootNavigationController.m */; };
 		5D55A61712BA9BB1004AE0EB /* PlacesNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A61612BA9BB1004AE0EB /* PlacesNavigationController.m */; };
 		5D55A6A012BAD92C004AE0EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A69F12BAD92C004AE0EB /* CoreLocation.framework */; };
+		5D55A6C912BAD993004AE0EB /* CLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A6C812BAD993004AE0EB /* CLController.m */; };
 		5D55A7BA12BB2640004AE0EB /* ASIHTTPRequest+OAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A79A12BB2640004AE0EB /* ASIHTTPRequest+OAuth.m */; };
 		5D55A7BB12BB2640004AE0EB /* NSArray+SGFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A79C12BB2640004AE0EB /* NSArray+SGFeature.m */; };
 		5D55A7BC12BB2640004AE0EB /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A79E12BB2640004AE0EB /* NSString+URLEncoding.m */; };
@@ -65,6 +66,8 @@
 		5D55A61512BA9BB1004AE0EB /* PlacesNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesNavigationController.h; sourceTree = "<group>"; };
 		5D55A61612BA9BB1004AE0EB /* PlacesNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesNavigationController.m; sourceTree = "<group>"; };
 		5D55A69F12BAD92C004AE0EB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5D55A6C712BAD993004AE0EB /* CLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLController.h; sourceTree = "<group>"; };
+		5D55A6C812BAD993004AE0EB /* CLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLController.m; sourceTree = "<group>"; };
 		5D55A79912BB2640004AE0EB /* ASIHTTPRequest+OAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASIHTTPRequest+OAuth.h"; sourceTree = "<group>"; };
 		5D55A79A12BB2640004AE0EB /* ASIHTTPRequest+OAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASIHTTPRequest+OAuth.m"; sourceTree = "<group>"; };
 		5D55A79B12BB2640004AE0EB /* NSArray+SGFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SGFeature.h"; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 				5D55A61312BA9845004AE0EB /* RootNavigationController.m */,
 				5D55A61512BA9BB1004AE0EB /* PlacesNavigationController.h */,
 				5D55A61612BA9BB1004AE0EB /* PlacesNavigationController.m */,
+				5D55A6C712BAD993004AE0EB /* CLController.h */,
+				5D55A6C812BAD993004AE0EB /* CLController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 				5DAF7FC212B0814C0015D272 /* PlacesMapViewController.m in Sources */,
 				5D55A61412BA9845004AE0EB /* RootNavigationController.m in Sources */,
 				5D55A61712BA9BB1004AE0EB /* PlacesNavigationController.m in Sources */,
+				5D55A6C912BAD993004AE0EB /* CLController.m in Sources */,
 				5D55A7BA12BB2640004AE0EB /* ASIHTTPRequest+OAuth.m in Sources */,
 				5D55A7BB12BB2640004AE0EB /* NSArray+SGFeature.m in Sources */,
 				5D55A7BC12BB2640004AE0EB /* NSString+URLEncoding.m in Sources */,
