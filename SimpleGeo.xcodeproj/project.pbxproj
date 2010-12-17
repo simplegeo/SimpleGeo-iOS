@@ -16,6 +16,34 @@
 		5D55A61412BA9845004AE0EB /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A61312BA9845004AE0EB /* RootNavigationController.m */; };
 		5D55A61712BA9BB1004AE0EB /* PlacesNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A61612BA9BB1004AE0EB /* PlacesNavigationController.m */; };
 		5D55A6A012BAD92C004AE0EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A69F12BAD92C004AE0EB /* CoreLocation.framework */; };
+		5D55A7BA12BB2640004AE0EB /* ASIHTTPRequest+OAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A79A12BB2640004AE0EB /* ASIHTTPRequest+OAuth.m */; };
+		5D55A7BB12BB2640004AE0EB /* NSArray+SGFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A79C12BB2640004AE0EB /* NSArray+SGFeature.m */; };
+		5D55A7BC12BB2640004AE0EB /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A79E12BB2640004AE0EB /* NSString+URLEncoding.m */; };
+		5D55A7BD12BB2640004AE0EB /* SGFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7A112BB2640004AE0EB /* SGFeature.m */; };
+		5D55A7BE12BB2640004AE0EB /* SGFeatureCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7A412BB2640004AE0EB /* SGFeatureCollection.m */; };
+		5D55A7BF12BB2640004AE0EB /* SGGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7A712BB2640004AE0EB /* SGGeometry.m */; };
+		5D55A7C012BB2640004AE0EB /* SGMultiPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7AA12BB2640004AE0EB /* SGMultiPolygon.m */; };
+		5D55A7C112BB2640004AE0EB /* SGPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7AD12BB2640004AE0EB /* SGPoint.m */; };
+		5D55A7C212BB2640004AE0EB /* SGPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7B012BB2640004AE0EB /* SGPolygon.m */; };
+		5D55A7C312BB2640004AE0EB /* SimpleGeo+Context.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7B212BB2640004AE0EB /* SimpleGeo+Context.m */; };
+		5D55A7C412BB2640004AE0EB /* SimpleGeo+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7B412BB2640004AE0EB /* SimpleGeo+Internal.m */; };
+		5D55A7C512BB2640004AE0EB /* SimpleGeo+Places.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7B612BB2640004AE0EB /* SimpleGeo+Places.m */; };
+		5D55A7C612BB2640004AE0EB /* SimpleGeo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7B812BB2640004AE0EB /* SimpleGeo.m */; };
+		5D55A7C712BB2640004AE0EB /* YAJL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A7B912BB2640004AE0EB /* YAJL.framework */; };
+		5D55A7EC12BB26AC004AE0EB /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7DC12BB26AC004AE0EB /* ASIDataCompressor.m */; };
+		5D55A7ED12BB26AC004AE0EB /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7DE12BB26AC004AE0EB /* ASIDataDecompressor.m */; };
+		5D55A7EE12BB26AC004AE0EB /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7E012BB26AC004AE0EB /* ASIDownloadCache.m */; };
+		5D55A7EF12BB26AC004AE0EB /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7E212BB26AC004AE0EB /* ASIFormDataRequest.m */; };
+		5D55A7F012BB26AC004AE0EB /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7E412BB26AC004AE0EB /* ASIHTTPRequest.m */; };
+		5D55A7F112BB26AC004AE0EB /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7E812BB26AC004AE0EB /* ASIInputStream.m */; };
+		5D55A7F212BB26AC004AE0EB /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A7EA12BB26AC004AE0EB /* ASINetworkQueue.m */; };
+		5D55A82212BB27F1004AE0EB /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A82012BB27F1004AE0EB /* Base64Transcoder.c */; };
+		5D55A82912BC02B4004AE0EB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A82812BC02B4004AE0EB /* Reachability.m */; };
+		5D55A82C12BC02CD004AE0EB /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A82B12BC02CD004AE0EB /* ASIAuthenticationDialog.m */; };
+		5D55A83012BC02F1004AE0EB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A82F12BC02F1004AE0EB /* libz.dylib */; };
+		5D55A83812BC0335004AE0EB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A83712BC0335004AE0EB /* CFNetwork.framework */; };
+		5D55A83A12BC0341004AE0EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A83912BC0341004AE0EB /* SystemConfiguration.framework */; };
+		5D55A83C12BC034A004AE0EB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A83B12BC034A004AE0EB /* MobileCoreServices.framework */; };
 		5DAF7F7C12B06F5F0015D272 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAF7F7B12B06F5F0015D272 /* MapKit.framework */; };
 		5DAF7F9B12B070B20015D272 /* ContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7F9A12B070B20015D272 /* ContextViewController.m */; };
 		5DAF7FBF12B081220015D272 /* PlacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7FBE12B081220015D272 /* PlacesListViewController.m */; };
@@ -37,6 +65,67 @@
 		5D55A61512BA9BB1004AE0EB /* PlacesNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesNavigationController.h; sourceTree = "<group>"; };
 		5D55A61612BA9BB1004AE0EB /* PlacesNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesNavigationController.m; sourceTree = "<group>"; };
 		5D55A69F12BAD92C004AE0EB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5D55A79912BB2640004AE0EB /* ASIHTTPRequest+OAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASIHTTPRequest+OAuth.h"; sourceTree = "<group>"; };
+		5D55A79A12BB2640004AE0EB /* ASIHTTPRequest+OAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASIHTTPRequest+OAuth.m"; sourceTree = "<group>"; };
+		5D55A79B12BB2640004AE0EB /* NSArray+SGFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SGFeature.h"; sourceTree = "<group>"; };
+		5D55A79C12BB2640004AE0EB /* NSArray+SGFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SGFeature.m"; sourceTree = "<group>"; };
+		5D55A79D12BB2640004AE0EB /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		5D55A79E12BB2640004AE0EB /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		5D55A79F12BB2640004AE0EB /* SGFeature+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SGFeature+Private.h"; sourceTree = "<group>"; };
+		5D55A7A012BB2640004AE0EB /* SGFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGFeature.h; sourceTree = "<group>"; };
+		5D55A7A112BB2640004AE0EB /* SGFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGFeature.m; sourceTree = "<group>"; };
+		5D55A7A212BB2640004AE0EB /* SGFeatureCollection+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SGFeatureCollection+Private.h"; sourceTree = "<group>"; };
+		5D55A7A312BB2640004AE0EB /* SGFeatureCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGFeatureCollection.h; sourceTree = "<group>"; };
+		5D55A7A412BB2640004AE0EB /* SGFeatureCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGFeatureCollection.m; sourceTree = "<group>"; };
+		5D55A7A512BB2640004AE0EB /* SGGeometry+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SGGeometry+Private.h"; sourceTree = "<group>"; };
+		5D55A7A612BB2640004AE0EB /* SGGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGeometry.h; sourceTree = "<group>"; };
+		5D55A7A712BB2640004AE0EB /* SGGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGGeometry.m; sourceTree = "<group>"; };
+		5D55A7A812BB2640004AE0EB /* SGMultiPolygon+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SGMultiPolygon+Private.h"; sourceTree = "<group>"; };
+		5D55A7A912BB2640004AE0EB /* SGMultiPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMultiPolygon.h; sourceTree = "<group>"; };
+		5D55A7AA12BB2640004AE0EB /* SGMultiPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMultiPolygon.m; sourceTree = "<group>"; };
+		5D55A7AB12BB2640004AE0EB /* SGPoint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SGPoint+Private.h"; sourceTree = "<group>"; };
+		5D55A7AC12BB2640004AE0EB /* SGPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPoint.h; sourceTree = "<group>"; };
+		5D55A7AD12BB2640004AE0EB /* SGPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPoint.m; sourceTree = "<group>"; };
+		5D55A7AE12BB2640004AE0EB /* SGPolygon+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SGPolygon+Private.h"; sourceTree = "<group>"; };
+		5D55A7AF12BB2640004AE0EB /* SGPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPolygon.h; sourceTree = "<group>"; };
+		5D55A7B012BB2640004AE0EB /* SGPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPolygon.m; sourceTree = "<group>"; };
+		5D55A7B112BB2640004AE0EB /* SimpleGeo+Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimpleGeo+Context.h"; sourceTree = "<group>"; };
+		5D55A7B212BB2640004AE0EB /* SimpleGeo+Context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SimpleGeo+Context.m"; sourceTree = "<group>"; };
+		5D55A7B312BB2640004AE0EB /* SimpleGeo+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimpleGeo+Internal.h"; sourceTree = "<group>"; };
+		5D55A7B412BB2640004AE0EB /* SimpleGeo+Internal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SimpleGeo+Internal.m"; sourceTree = "<group>"; };
+		5D55A7B512BB2640004AE0EB /* SimpleGeo+Places.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimpleGeo+Places.h"; sourceTree = "<group>"; };
+		5D55A7B612BB2640004AE0EB /* SimpleGeo+Places.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SimpleGeo+Places.m"; sourceTree = "<group>"; };
+		5D55A7B712BB2640004AE0EB /* SimpleGeo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleGeo.h; sourceTree = "<group>"; };
+		5D55A7B812BB2640004AE0EB /* SimpleGeo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleGeo.m; sourceTree = "<group>"; };
+		5D55A7B912BB2640004AE0EB /* YAJL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YAJL.framework; sourceTree = "<group>"; };
+		5D55A7DA12BB26AC004AE0EB /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		5D55A7DB12BB26AC004AE0EB /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		5D55A7DC12BB26AC004AE0EB /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		5D55A7DD12BB26AC004AE0EB /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		5D55A7DE12BB26AC004AE0EB /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		5D55A7DF12BB26AC004AE0EB /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		5D55A7E012BB26AC004AE0EB /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		5D55A7E112BB26AC004AE0EB /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		5D55A7E212BB26AC004AE0EB /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		5D55A7E312BB26AC004AE0EB /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		5D55A7E412BB26AC004AE0EB /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		5D55A7E512BB26AC004AE0EB /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		5D55A7E612BB26AC004AE0EB /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		5D55A7E712BB26AC004AE0EB /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		5D55A7E812BB26AC004AE0EB /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		5D55A7E912BB26AC004AE0EB /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		5D55A7EA12BB26AC004AE0EB /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		5D55A7EB12BB26AC004AE0EB /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		5D55A82012BB27F1004AE0EB /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		5D55A82112BB27F1004AE0EB /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		5D55A82712BC02B4004AE0EB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5D55A82812BC02B4004AE0EB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5D55A82A12BC02CD004AE0EB /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		5D55A82B12BC02CD004AE0EB /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		5D55A82F12BC02F1004AE0EB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5D55A83712BC0335004AE0EB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5D55A83912BC0341004AE0EB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5D55A83B12BC034A004AE0EB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5DAF7F7B12B06F5F0015D272 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5DAF7F9912B070B20015D272 /* ContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextViewController.h; sourceTree = "<group>"; };
 		5DAF7F9A12B070B20015D272 /* ContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextViewController.m; sourceTree = "<group>"; };
@@ -57,6 +146,11 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				5DAF7F7C12B06F5F0015D272 /* MapKit.framework in Frameworks */,
 				5D55A6A012BAD92C004AE0EB /* CoreLocation.framework in Frameworks */,
+				5D55A7C712BB2640004AE0EB /* YAJL.framework in Frameworks */,
+				5D55A83012BC02F1004AE0EB /* libz.dylib in Frameworks */,
+				5D55A83812BC0335004AE0EB /* CFNetwork.framework in Frameworks */,
+				5D55A83A12BC0341004AE0EB /* SystemConfiguration.framework in Frameworks */,
+				5D55A83C12BC034A004AE0EB /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +190,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				5D55A79712BB2640004AE0EB /* ext */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -128,8 +223,108 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				5DAF7F7B12B06F5F0015D272 /* MapKit.framework */,
 				5D55A69F12BAD92C004AE0EB /* CoreLocation.framework */,
+				5D55A82F12BC02F1004AE0EB /* libz.dylib */,
+				5D55A83712BC0335004AE0EB /* CFNetwork.framework */,
+				5D55A83B12BC034A004AE0EB /* MobileCoreServices.framework */,
+				5D55A83912BC0341004AE0EB /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D55A79712BB2640004AE0EB /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				5D55A7D912BB26AC004AE0EB /* asi-http-request */,
+				5D55A82612BC02B4004AE0EB /* Reachability */,
+				5D55A79812BB2640004AE0EB /* SimpleGeo */,
+				5D55A81F12BB27F1004AE0EB /* TouchFoundation */,
+				5D55A7B912BB2640004AE0EB /* YAJL.framework */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		5D55A79812BB2640004AE0EB /* SimpleGeo */ = {
+			isa = PBXGroup;
+			children = (
+				5D55A79912BB2640004AE0EB /* ASIHTTPRequest+OAuth.h */,
+				5D55A79A12BB2640004AE0EB /* ASIHTTPRequest+OAuth.m */,
+				5D55A79B12BB2640004AE0EB /* NSArray+SGFeature.h */,
+				5D55A79C12BB2640004AE0EB /* NSArray+SGFeature.m */,
+				5D55A79D12BB2640004AE0EB /* NSString+URLEncoding.h */,
+				5D55A79E12BB2640004AE0EB /* NSString+URLEncoding.m */,
+				5D55A79F12BB2640004AE0EB /* SGFeature+Private.h */,
+				5D55A7A012BB2640004AE0EB /* SGFeature.h */,
+				5D55A7A112BB2640004AE0EB /* SGFeature.m */,
+				5D55A7A212BB2640004AE0EB /* SGFeatureCollection+Private.h */,
+				5D55A7A312BB2640004AE0EB /* SGFeatureCollection.h */,
+				5D55A7A412BB2640004AE0EB /* SGFeatureCollection.m */,
+				5D55A7A512BB2640004AE0EB /* SGGeometry+Private.h */,
+				5D55A7A612BB2640004AE0EB /* SGGeometry.h */,
+				5D55A7A712BB2640004AE0EB /* SGGeometry.m */,
+				5D55A7A812BB2640004AE0EB /* SGMultiPolygon+Private.h */,
+				5D55A7A912BB2640004AE0EB /* SGMultiPolygon.h */,
+				5D55A7AA12BB2640004AE0EB /* SGMultiPolygon.m */,
+				5D55A7AB12BB2640004AE0EB /* SGPoint+Private.h */,
+				5D55A7AC12BB2640004AE0EB /* SGPoint.h */,
+				5D55A7AD12BB2640004AE0EB /* SGPoint.m */,
+				5D55A7AE12BB2640004AE0EB /* SGPolygon+Private.h */,
+				5D55A7AF12BB2640004AE0EB /* SGPolygon.h */,
+				5D55A7B012BB2640004AE0EB /* SGPolygon.m */,
+				5D55A7B112BB2640004AE0EB /* SimpleGeo+Context.h */,
+				5D55A7B212BB2640004AE0EB /* SimpleGeo+Context.m */,
+				5D55A7B312BB2640004AE0EB /* SimpleGeo+Internal.h */,
+				5D55A7B412BB2640004AE0EB /* SimpleGeo+Internal.m */,
+				5D55A7B512BB2640004AE0EB /* SimpleGeo+Places.h */,
+				5D55A7B612BB2640004AE0EB /* SimpleGeo+Places.m */,
+				5D55A7B712BB2640004AE0EB /* SimpleGeo.h */,
+				5D55A7B812BB2640004AE0EB /* SimpleGeo.m */,
+			);
+			path = SimpleGeo;
+			sourceTree = "<group>";
+		};
+		5D55A7D912BB26AC004AE0EB /* asi-http-request */ = {
+			isa = PBXGroup;
+			children = (
+				5D55A82A12BC02CD004AE0EB /* ASIAuthenticationDialog.h */,
+				5D55A82B12BC02CD004AE0EB /* ASIAuthenticationDialog.m */,
+				5D55A7DA12BB26AC004AE0EB /* ASICacheDelegate.h */,
+				5D55A7DB12BB26AC004AE0EB /* ASIDataCompressor.h */,
+				5D55A7DC12BB26AC004AE0EB /* ASIDataCompressor.m */,
+				5D55A7DD12BB26AC004AE0EB /* ASIDataDecompressor.h */,
+				5D55A7DE12BB26AC004AE0EB /* ASIDataDecompressor.m */,
+				5D55A7DF12BB26AC004AE0EB /* ASIDownloadCache.h */,
+				5D55A7E012BB26AC004AE0EB /* ASIDownloadCache.m */,
+				5D55A7E112BB26AC004AE0EB /* ASIFormDataRequest.h */,
+				5D55A7E212BB26AC004AE0EB /* ASIFormDataRequest.m */,
+				5D55A7E312BB26AC004AE0EB /* ASIHTTPRequest.h */,
+				5D55A7E412BB26AC004AE0EB /* ASIHTTPRequest.m */,
+				5D55A7E512BB26AC004AE0EB /* ASIHTTPRequestConfig.h */,
+				5D55A7E612BB26AC004AE0EB /* ASIHTTPRequestDelegate.h */,
+				5D55A7E712BB26AC004AE0EB /* ASIInputStream.h */,
+				5D55A7E812BB26AC004AE0EB /* ASIInputStream.m */,
+				5D55A7E912BB26AC004AE0EB /* ASINetworkQueue.h */,
+				5D55A7EA12BB26AC004AE0EB /* ASINetworkQueue.m */,
+				5D55A7EB12BB26AC004AE0EB /* ASIProgressDelegate.h */,
+			);
+			path = "asi-http-request";
+			sourceTree = "<group>";
+		};
+		5D55A81F12BB27F1004AE0EB /* TouchFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				5D55A82012BB27F1004AE0EB /* Base64Transcoder.c */,
+				5D55A82112BB27F1004AE0EB /* Base64Transcoder.h */,
+			);
+			path = TouchFoundation;
+			sourceTree = "<group>";
+		};
+		5D55A82612BC02B4004AE0EB /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				5D55A82712BC02B4004AE0EB /* Reachability.h */,
+				5D55A82812BC02B4004AE0EB /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +394,29 @@
 				5DAF7FC212B0814C0015D272 /* PlacesMapViewController.m in Sources */,
 				5D55A61412BA9845004AE0EB /* RootNavigationController.m in Sources */,
 				5D55A61712BA9BB1004AE0EB /* PlacesNavigationController.m in Sources */,
+				5D55A7BA12BB2640004AE0EB /* ASIHTTPRequest+OAuth.m in Sources */,
+				5D55A7BB12BB2640004AE0EB /* NSArray+SGFeature.m in Sources */,
+				5D55A7BC12BB2640004AE0EB /* NSString+URLEncoding.m in Sources */,
+				5D55A7BD12BB2640004AE0EB /* SGFeature.m in Sources */,
+				5D55A7BE12BB2640004AE0EB /* SGFeatureCollection.m in Sources */,
+				5D55A7BF12BB2640004AE0EB /* SGGeometry.m in Sources */,
+				5D55A7C012BB2640004AE0EB /* SGMultiPolygon.m in Sources */,
+				5D55A7C112BB2640004AE0EB /* SGPoint.m in Sources */,
+				5D55A7C212BB2640004AE0EB /* SGPolygon.m in Sources */,
+				5D55A7C312BB2640004AE0EB /* SimpleGeo+Context.m in Sources */,
+				5D55A7C412BB2640004AE0EB /* SimpleGeo+Internal.m in Sources */,
+				5D55A7C512BB2640004AE0EB /* SimpleGeo+Places.m in Sources */,
+				5D55A7C612BB2640004AE0EB /* SimpleGeo.m in Sources */,
+				5D55A7EC12BB26AC004AE0EB /* ASIDataCompressor.m in Sources */,
+				5D55A7ED12BB26AC004AE0EB /* ASIDataDecompressor.m in Sources */,
+				5D55A7EE12BB26AC004AE0EB /* ASIDownloadCache.m in Sources */,
+				5D55A7EF12BB26AC004AE0EB /* ASIFormDataRequest.m in Sources */,
+				5D55A7F012BB26AC004AE0EB /* ASIHTTPRequest.m in Sources */,
+				5D55A7F112BB26AC004AE0EB /* ASIInputStream.m in Sources */,
+				5D55A7F212BB26AC004AE0EB /* ASINetworkQueue.m in Sources */,
+				5D55A82212BB27F1004AE0EB /* Base64Transcoder.c in Sources */,
+				5D55A82912BC02B4004AE0EB /* Reachability.m in Sources */,
+				5D55A82C12BC02CD004AE0EB /* ASIAuthenticationDialog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +428,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ext\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -224,6 +446,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ext\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SimpleGeo_Prefix.pch;
 				INFOPLIST_FILE = "SimpleGeo-Info.plist";
