@@ -35,7 +35,7 @@
     CLLocationManager *locationManager;
 }
 
-@property (readonly)         CLLocation *lastLocation;
+@property (readonly,retain)  CLLocation *lastLocation;
 @property (nonatomic,retain) CLLocationManager *locationManager;
 
 - (void)startUpdatingLocation;
