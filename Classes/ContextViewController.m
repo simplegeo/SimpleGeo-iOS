@@ -34,6 +34,7 @@
 @implementation ContextViewController
 
 @synthesize locationController;
+@synthesize simpleGeoController;
 @synthesize mapView;
 
 - (void)viewDidAppear:(BOOL)animated

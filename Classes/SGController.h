@@ -1,5 +1,5 @@
 //
-//  ContextViewController.h
+//  SGController.h
 //  SimpleGeo
 //
 //  Copyright (c) 2010, SimpleGeo Inc.
@@ -28,20 +28,16 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import <MapKit/MapKit.h>
-#import "CLController.h"
-#import "SGController.h"
+#import "SimpleGeo.h"
 
 
-@interface ContextViewController : UIViewController
+@interface SGController : NSObject
 {
-    CLController *locationController;
-    SGController *simpleGeoController;
-    MKMapView *mapView;
+    SimpleGeo *client;
 }
 
-@property (nonatomic,retain) IBOutlet CLController *locationController;
-@property (nonatomic,retain) IBOutlet SGController *simpleGeoController;
-@property (nonatomic,retain) IBOutlet MKMapView *mapView;
+@property (nonatomic,retain) SimpleGeo *client;
+
+- (void)setDelegate:(id)delegate;
 
 @end

@@ -34,13 +34,14 @@
 @implementation PlacesMapViewController
 
 @synthesize locationController;
+@synthesize simpleGeoController;
 @synthesize mapView;
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
 
-    CLLocation *lastLocation = [locationController lastLocation];
+    CLLocation *lastLocation = [self.locationController lastLocation];
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([lastLocation coordinate], 1000.0, 1000.0);
     [self.mapView setRegion:region];
 }

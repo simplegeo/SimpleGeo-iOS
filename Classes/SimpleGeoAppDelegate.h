@@ -29,15 +29,18 @@
 //
 
 #import "CLController.h"
+#import "SGController.h"
 
 
 @interface SimpleGeoAppDelegate : NSObject <UIApplicationDelegate, CLLocationManagerDelegate>
 {
     CLController *locationController;
+    SGController *simpleGeoController;
     UIWindow *window;
 }
 
 @property (nonatomic,readonly) IBOutlet CLController *locationController;
+@property (nonatomic,readonly) IBOutlet SGController *simpleGeoController;
 @property (nonatomic,retain) IBOutlet UIWindow *window;
 
 @end

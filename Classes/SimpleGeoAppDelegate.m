@@ -33,6 +33,7 @@
 @implementation SimpleGeoAppDelegate
 
 @synthesize locationController;
+@synthesize simpleGeoController;
 @synthesize window;
 
 
@@ -118,6 +119,7 @@
 
 - (void)dealloc {
     [locationController release];
+    [simpleGeoController release];
     [window release];
     [super dealloc];
 }

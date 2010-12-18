@@ -30,15 +30,18 @@
 
 #import <MapKit/MapKit.h>
 #import "CLController.h"
+#import "SGController.h"
 
 
 @interface PlacesMapViewController : UIViewController
 {
     CLController *locationController;
+    SGController *simpleGeoController;
     MKMapView *mapView;
 }
 
 @property (nonatomic,retain) IBOutlet CLController *locationController;
+@property (nonatomic,retain) IBOutlet SGController *simpleGeoController;
 @property (nonatomic,retain) IBOutlet MKMapView *mapView;
 
 @end

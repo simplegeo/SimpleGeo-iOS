@@ -45,6 +45,7 @@
 		5D55A83812BC0335004AE0EB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A83712BC0335004AE0EB /* CFNetwork.framework */; };
 		5D55A83A12BC0341004AE0EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A83912BC0341004AE0EB /* SystemConfiguration.framework */; };
 		5D55A83C12BC034A004AE0EB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A83B12BC034A004AE0EB /* MobileCoreServices.framework */; };
+		5D55A8A412BC310D004AE0EB /* SGController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A8A312BC310D004AE0EB /* SGController.m */; };
 		5DAF7F7C12B06F5F0015D272 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAF7F7B12B06F5F0015D272 /* MapKit.framework */; };
 		5DAF7F9B12B070B20015D272 /* ContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7F9A12B070B20015D272 /* ContextViewController.m */; };
 		5DAF7FBF12B081220015D272 /* PlacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7FBE12B081220015D272 /* PlacesListViewController.m */; };
@@ -129,6 +130,8 @@
 		5D55A83712BC0335004AE0EB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5D55A83912BC0341004AE0EB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5D55A83B12BC034A004AE0EB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5D55A8A212BC310D004AE0EB /* SGController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGController.h; sourceTree = "<group>"; };
+		5D55A8A312BC310D004AE0EB /* SGController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGController.m; sourceTree = "<group>"; };
 		5DAF7F7B12B06F5F0015D272 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5DAF7F9912B070B20015D272 /* ContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextViewController.h; sourceTree = "<group>"; };
 		5DAF7F9A12B070B20015D272 /* ContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextViewController.m; sourceTree = "<group>"; };
@@ -177,6 +180,8 @@
 				5D55A61612BA9BB1004AE0EB /* PlacesNavigationController.m */,
 				5D55A6C712BAD993004AE0EB /* CLController.h */,
 				5D55A6C812BAD993004AE0EB /* CLController.m */,
+				5D55A8A212BC310D004AE0EB /* SGController.h */,
+				5D55A8A312BC310D004AE0EB /* SGController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 				5D55A82212BB27F1004AE0EB /* Base64Transcoder.c in Sources */,
 				5D55A82912BC02B4004AE0EB /* Reachability.m in Sources */,
 				5D55A82C12BC02CD004AE0EB /* ASIAuthenticationDialog.m in Sources */,
+				5D55A8A412BC310D004AE0EB /* SGController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

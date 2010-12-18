@@ -1,5 +1,5 @@
 //
-//  ContextViewController.h
+//  SGController.m
 //  SimpleGeo
 //
 //  Copyright (c) 2010, SimpleGeo Inc.
@@ -28,20 +28,51 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import <MapKit/MapKit.h>
-#import "CLController.h"
 #import "SGController.h"
+#import "SimpleGeo+Context.h"
+#import "SimpleGeo+Places.h"
 
 
-@interface ContextViewController : UIViewController
+@implementation SGController
+
+@synthesize client;
+
+- (id)init
 {
-    CLController *locationController;
-    SGController *simpleGeoController;
-    MKMapView *mapView;
+    self = [super init];
+
+    if (self) {
+        // default to using this as the delegate for potentially helpful error logging
+        client = [[SimpleGeo clientWithDelegate:self
+                                       consumerKey:@"consumerKey"
+                                    consumerSecret:@"consumerSecret"
+                                               URL:[NSURL URLWithString:@"http://localhost:4567"]] retain];
+    }
+
+    return self;
 }
 
-@property (nonatomic,retain) IBOutlet CLController *locationController;
-@property (nonatomic,retain) IBOutlet SGController *simpleGeoController;
-@property (nonatomic,retain) IBOutlet MKMapView *mapView;
+- (void)dealloc
+{
+    [client dealloc];
+    [super dealloc];
+}
+
+- (void)setDelegate:(id)delegate
+{
+    [client setDelegate:delegate];
+}
+
+#pragma mark SimpleGeoDelegate methods
+
+- (void)requestDidFail:(ASIHTTPRequest *)request
+{
+    NSLog(@"Request failed: %@: %i", [request responseStatusMessage], [request responseStatusCode]);
+}
+
+- (void)requestDidFinish:(ASIHTTPRequest *)request
+{
+    NSLog(@"Request finished: %@", [request responseString]);
+}
 
 @end
