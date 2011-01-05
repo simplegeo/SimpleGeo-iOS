@@ -50,6 +50,7 @@
 		5DAF7F9B12B070B20015D272 /* ContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7F9A12B070B20015D272 /* ContextViewController.m */; };
 		5DAF7FBF12B081220015D272 /* PlacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7FBE12B081220015D272 /* PlacesListViewController.m */; };
 		5DAF7FC212B0814C0015D272 /* PlacesMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7FC112B0814C0015D272 /* PlacesMapViewController.m */; };
+		5DF1FF7412D515040097CF47 /* ContextTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1FF7312D515040097CF47 /* ContextTVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +140,7 @@
 		5DAF7FBE12B081220015D272 /* PlacesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesListViewController.m; sourceTree = "<group>"; };
 		5DAF7FC012B0814C0015D272 /* PlacesMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesMapViewController.h; sourceTree = "<group>"; };
 		5DAF7FC112B0814C0015D272 /* PlacesMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesMapViewController.m; sourceTree = "<group>"; };
+		5DF1FF7312D515040097CF47 /* ContextTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextTVCell.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SimpleGeo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SimpleGeo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,6 +223,7 @@
 			children = (
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* SimpleGeo-Info.plist */,
+				5DF1FF7312D515040097CF47 /* ContextTVCell.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				5DF1FF7412D515040097CF47 /* ContextTVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

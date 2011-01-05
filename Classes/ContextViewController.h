@@ -39,6 +39,7 @@
     SGController *simpleGeoController;
     MKMapView *mapView;
     UITableView *tableView;
+    UITableViewCell *tvCell;
 
     NSArray *contextData;
 }
@@ -47,6 +48,7 @@
 @property (nonatomic,retain) IBOutlet SGController *simpleGeoController;
 @property (nonatomic,retain) IBOutlet MKMapView *mapView;
 @property (nonatomic,retain) IBOutlet UITableView *tableView;
+@property (nonatomic,assign) IBOutlet UITableViewCell *tvCell;
 
 @property (nonatomic,retain) NSArray *contextData;
 

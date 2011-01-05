@@ -38,6 +38,7 @@
 @synthesize simpleGeoController;
 @synthesize mapView;
 @synthesize tableView;
+@synthesize tvCell;
 @synthesize contextData;
 
 - (void)viewDidAppear:(BOOL)animated
@@ -107,14 +108,14 @@
 - (UITableViewCell *)tableView:(UITableView *)aTableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *ContextIdentifier = @"ContextIdentifier";
+    static NSString *ContextIdentifier = @"ContextTableViewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ContextIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                       reuseIdentifier:ContextIdentifier] autorelease];
-
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        [[NSBundle mainBundle] loadNibNamed:@"ContextTVCell"
+                                      owner:self
+                                    options:nil];
+        cell = tvCell;
+        self.tvCell = nil;
     }
 
     NSDictionary *row = [contextData objectAtIndex:indexPath.row];
@@ -126,8 +127,13 @@
         category = [NSString stringWithFormat:@"%@ ➟ %@", category, subcategory];
     }
 
-    cell.textLabel.text = category;
-    cell.detailTextLabel.text = name;
+    UILabel *label;
+    label = (UILabel *)[cell viewWithTag:1];
+    label.text = [category uppercaseString];
+
+    label = (UILabel *)[cell viewWithTag:2];
+    label.text = name;
+
     return cell;
 }
 
