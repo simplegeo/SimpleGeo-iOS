@@ -137,4 +137,16 @@
     return cell;
 }
 
+#pragma mark UITableViewDelegate methods
+
+- (CGFloat)tableView:(UITableView *)aTableView
+heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == [contextData count] - 1) {
+        return 87.0;
+    }
+
+    return 80.0;
+}
+
 @end
