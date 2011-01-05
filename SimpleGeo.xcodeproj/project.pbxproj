@@ -51,6 +51,16 @@
 		5DAF7FBF12B081220015D272 /* PlacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7FBE12B081220015D272 /* PlacesListViewController.m */; };
 		5DAF7FC212B0814C0015D272 /* PlacesMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7FC112B0814C0015D272 /* PlacesMapViewController.m */; };
 		5DF1004612D531DA0097CF47 /* bgGrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1004512D531DA0097CF47 /* bgGrid.png */; };
+		5DF1006612D5352B0097CF47 /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1006512D5352B0097CF47 /* header@2x.png */; };
+		5DF1006B12D5356B0097CF47 /* buttonPin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1006712D5356B0097CF47 /* buttonPin@2x.png */; };
+		5DF1006C12D5356B0097CF47 /* buttonPinDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1006812D5356B0097CF47 /* buttonPinDown@2x.png */; };
+		5DF1006D12D5356B0097CF47 /* buttonSearch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1006912D5356B0097CF47 /* buttonSearch@2x.png */; };
+		5DF1006E12D5356B0097CF47 /* buttonSearchDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1006A12D5356B0097CF47 /* buttonSearchDown@2x.png */; };
+		5DF1007912D53AE30097CF47 /* buttonPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1007512D53AE30097CF47 /* buttonPin.png */; };
+		5DF1007A12D53AE30097CF47 /* buttonPinDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1007612D53AE30097CF47 /* buttonPinDown.png */; };
+		5DF1007B12D53AE30097CF47 /* buttonSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1007712D53AE30097CF47 /* buttonSearch.png */; };
+		5DF1007C12D53AE30097CF47 /* buttonSearchDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1007812D53AE30097CF47 /* buttonSearchDown.png */; };
+		5DF1008412D53B0E0097CF47 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1008312D53B0E0097CF47 /* header.png */; };
 		5DF1FF7412D515040097CF47 /* ContextTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1FF7312D515040097CF47 /* ContextTVCell.xib */; };
 		5DF1FFED12D524980097CF47 /* bgGrid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */; };
 /* End PBXBuildFile section */
@@ -143,6 +153,16 @@
 		5DAF7FC012B0814C0015D272 /* PlacesMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesMapViewController.h; sourceTree = "<group>"; };
 		5DAF7FC112B0814C0015D272 /* PlacesMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesMapViewController.m; sourceTree = "<group>"; };
 		5DF1004512D531DA0097CF47 /* bgGrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgGrid.png; path = Assets/bgGrid.png; sourceTree = "<group>"; };
+		5DF1006512D5352B0097CF47 /* header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "header@2x.png"; path = "Assets/header@2x.png"; sourceTree = "<group>"; };
+		5DF1006712D5356B0097CF47 /* buttonPin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "buttonPin@2x.png"; path = "Assets/buttonPin@2x.png"; sourceTree = "<group>"; };
+		5DF1006812D5356B0097CF47 /* buttonPinDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "buttonPinDown@2x.png"; path = "Assets/buttonPinDown@2x.png"; sourceTree = "<group>"; };
+		5DF1006912D5356B0097CF47 /* buttonSearch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "buttonSearch@2x.png"; path = "Assets/buttonSearch@2x.png"; sourceTree = "<group>"; };
+		5DF1006A12D5356B0097CF47 /* buttonSearchDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "buttonSearchDown@2x.png"; path = "Assets/buttonSearchDown@2x.png"; sourceTree = "<group>"; };
+		5DF1007512D53AE30097CF47 /* buttonPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonPin.png; path = Assets/buttonPin.png; sourceTree = "<group>"; };
+		5DF1007612D53AE30097CF47 /* buttonPinDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonPinDown.png; path = Assets/buttonPinDown.png; sourceTree = "<group>"; };
+		5DF1007712D53AE30097CF47 /* buttonSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonSearch.png; path = Assets/buttonSearch.png; sourceTree = "<group>"; };
+		5DF1007812D53AE30097CF47 /* buttonSearchDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonSearchDown.png; path = Assets/buttonSearchDown.png; sourceTree = "<group>"; };
+		5DF1008312D53B0E0097CF47 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header.png; path = Assets/header.png; sourceTree = "<group>"; };
 		5DF1FF7312D515040097CF47 /* ContextTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextTVCell.xib; sourceTree = "<group>"; };
 		5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bgGrid@2x.png"; path = "Assets/bgGrid@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SimpleGeo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SimpleGeo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -350,6 +370,16 @@
 			children = (
 				5DF1004512D531DA0097CF47 /* bgGrid.png */,
 				5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */,
+				5DF1007512D53AE30097CF47 /* buttonPin.png */,
+				5DF1006712D5356B0097CF47 /* buttonPin@2x.png */,
+				5DF1007612D53AE30097CF47 /* buttonPinDown.png */,
+				5DF1006812D5356B0097CF47 /* buttonPinDown@2x.png */,
+				5DF1007712D53AE30097CF47 /* buttonSearch.png */,
+				5DF1006912D5356B0097CF47 /* buttonSearch@2x.png */,
+				5DF1007812D53AE30097CF47 /* buttonSearchDown.png */,
+				5DF1006A12D5356B0097CF47 /* buttonSearchDown@2x.png */,
+				5DF1008312D53B0E0097CF47 /* header.png */,
+				5DF1006512D5352B0097CF47 /* header@2x.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -407,6 +437,16 @@
 				5DF1FF7412D515040097CF47 /* ContextTVCell.xib in Resources */,
 				5DF1FFED12D524980097CF47 /* bgGrid@2x.png in Resources */,
 				5DF1004612D531DA0097CF47 /* bgGrid.png in Resources */,
+				5DF1006612D5352B0097CF47 /* header@2x.png in Resources */,
+				5DF1006B12D5356B0097CF47 /* buttonPin@2x.png in Resources */,
+				5DF1006C12D5356B0097CF47 /* buttonPinDown@2x.png in Resources */,
+				5DF1006D12D5356B0097CF47 /* buttonSearch@2x.png in Resources */,
+				5DF1006E12D5356B0097CF47 /* buttonSearchDown@2x.png in Resources */,
+				5DF1007912D53AE30097CF47 /* buttonPin.png in Resources */,
+				5DF1007A12D53AE30097CF47 /* buttonPinDown.png in Resources */,
+				5DF1007B12D53AE30097CF47 /* buttonSearch.png in Resources */,
+				5DF1007C12D53AE30097CF47 /* buttonSearchDown.png in Resources */,
+				5DF1008412D53B0E0097CF47 /* header.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
