@@ -29,6 +29,7 @@
 //
 
 #import "PlacesMapViewController.h"
+#import "SimpleGeo+Places.h"
 
 
 @implementation PlacesMapViewController
@@ -41,9 +42,34 @@
 {
     [super viewDidAppear:animated];
 
-    CLLocation *lastLocation = [self.locationController lastLocation];
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([lastLocation coordinate], 1000.0, 1000.0);
+    CLLocationCoordinate2D lastLocation = [[self.locationController lastLocation] coordinate];
+
+    [self.simpleGeoController setDelegate:self];
+    [self.simpleGeoController.client getPlacesNear:[SGPoint pointWithLatitude:lastLocation.latitude
+                                                                    longitude:lastLocation.longitude]];
+
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(lastLocation, 1000.0, 1000.0);
     [self.mapView setRegion:region];
+}
+
+#pragma mark SimpleGeoDelegate methods
+
+- (void)requestDidFail:(ASIHTTPRequest *)request
+{
+    NSLog(@"Request failed: %@: %i", [request responseStatusMessage], [request responseStatusCode]);
+}
+
+- (void)requestDidFinish:(ASIHTTPRequest *)request
+{
+    NSLog(@"Request finished: %@", [request responseString]);
+}
+
+- (void)didLoadPlaces:(SGFeatureCollection *)places
+                 near:(SGPoint *)point
+             matching:(NSString *)query
+           inCategory:(NSString *)category
+{
+    NSLog(@"Places: %@", places);
 }
 
 @end

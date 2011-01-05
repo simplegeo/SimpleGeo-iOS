@@ -33,15 +33,21 @@
 #import "SGController.h"
 
 
-@interface ContextViewController : UIViewController
+@interface ContextViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     CLController *locationController;
     SGController *simpleGeoController;
     MKMapView *mapView;
+    UITableView *tableView;
+
+    NSArray *contextData;
 }
 
 @property (nonatomic,retain) IBOutlet CLController *locationController;
 @property (nonatomic,retain) IBOutlet SGController *simpleGeoController;
 @property (nonatomic,retain) IBOutlet MKMapView *mapView;
+@property (nonatomic,retain) IBOutlet UITableView *tableView;
+
+@property (nonatomic,retain) NSArray *contextData;
 
 @end

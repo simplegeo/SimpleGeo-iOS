@@ -29,21 +29,106 @@
 //
 
 #import "ContextViewController.h"
-#import "SimpleGeoAppDelegate.h"
+#import "SimpleGeo+Context.h"
+
 
 @implementation ContextViewController
 
 @synthesize locationController;
 @synthesize simpleGeoController;
 @synthesize mapView;
+@synthesize tableView;
+@synthesize contextData;
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
 
-    CLLocation *lastLocation = [locationController lastLocation];
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([lastLocation coordinate], 1000.0, 1000.0);
+    CLLocationCoordinate2D lastLocation = [[self.locationController lastLocation] coordinate];
+
+    [self.simpleGeoController setDelegate:self];
+    [self.simpleGeoController.client getContextFor:[SGPoint pointWithLatitude:lastLocation.latitude
+                                                                    longitude:lastLocation.longitude]];
+
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(lastLocation, 1000.0, 1000.0);
     [self.mapView setRegion:region];
+}
+
+#pragma mark SimpleGeoDelegate methods
+
+- (void)requestDidFail:(ASIHTTPRequest *)request
+{
+    NSLog(@"Request failed: %@: %i", [request responseStatusMessage], [request responseStatusCode]);
+}
+
+- (void)requestDidFinish:(ASIHTTPRequest *)request
+{
+    NSLog(@"Request finished: %@", [request responseString]);
+}
+
+- (void)didLoadContext:(NSDictionary *)context
+                   for:(SGPoint *)point
+{
+    NSArray *features = [context objectForKey:@"features"];
+    for (NSDictionary *feature in features) {
+        NSString *category = [feature objectForKey:@"category"];
+        NSString *name = [feature objectForKey:@"name"];
+
+        NSString *subcategory = (NSString *)[feature objectForKey:@"subcategory"];
+        if (subcategory && [subcategory isEqual:@""]) {
+            category = subcategory;
+        }
+
+        NSLog(@"%@: %@", category, name);
+    }
+
+    self.contextData = features;
+
+    [tableView reloadData];
+}
+
+#pragma mark UITableViewDataSource methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)aTableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)aTableView
+ numberOfRowsInSection:(NSInteger)section
+{
+    if (contextData) {
+        return [contextData count];
+    }
+
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)aTableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *ContextIdentifier = @"ContextIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ContextIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                       reuseIdentifier:ContextIdentifier] autorelease];
+
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+
+    NSDictionary *row = [contextData objectAtIndex:indexPath.row];
+    NSString *name = [row objectForKey:@"name"];
+    NSString *category = [row objectForKey:@"category"];
+
+    NSString *subcategory = (NSString *)[row objectForKey:@"subcategory"];
+    if (subcategory && ! [subcategory isEqual:@""]) {
+        category = [NSString stringWithFormat:@"%@ ➟ %@", category, subcategory];
+    }
+
+    cell.textLabel.text = category;
+    cell.detailTextLabel.text = name;
+    return cell;
 }
 
 @end
