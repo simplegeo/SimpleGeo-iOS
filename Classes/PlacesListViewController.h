@@ -28,10 +28,25 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
+#import "CLController.h"
+#import "SGController.h"
 
-@interface PlacesListViewController : UIViewController
+
+@interface PlacesListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
+    CLController *locationController;
+    SGController *simpleGeoController;
+    UITableView *tableView;
+    UITableViewCell *tvCell;
 
+    SGFeatureCollection *placeData;
 }
+
+@property (nonatomic,assign) IBOutlet CLController *locationController;
+@property (nonatomic,assign) IBOutlet SGController *simpleGeoController;
+@property (nonatomic,assign) IBOutlet UITableView *tableView;
+@property (nonatomic,assign) IBOutlet UITableViewCell *tvCell;
+
+@property (nonatomic,retain) SGFeatureCollection *placeData;
 
 @end

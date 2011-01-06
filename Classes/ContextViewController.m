@@ -55,6 +55,12 @@
     [self.mapView setRegion:region];
 }
 
+- (void)dealloc
+{
+    [contextData release];
+    [super dealloc];
+}
+
 #pragma mark SimpleGeoDelegate methods
 
 - (void)requestDidFail:(ASIHTTPRequest *)request
@@ -64,7 +70,7 @@
 
 - (void)requestDidFinish:(ASIHTTPRequest *)request
 {
-    NSLog(@"Request finished: %@", [request responseString]);
+    // NSLog(@"Request finished: %@", [request responseString]);
 }
 
 - (void)didLoadContext:(NSDictionary *)context
@@ -107,11 +113,17 @@
 
     NSDictionary *row = [contextData objectAtIndex:indexPath.row];
     NSString *name = [row objectForKey:@"name"];
-    NSString *category = [row objectForKey:@"category"];
+    NSString *category = @"";
 
-    NSString *subcategory = (NSString *)[row objectForKey:@"subcategory"];
-    if (subcategory && ! [subcategory isEqual:@""]) {
-        category = [NSString stringWithFormat:@"%@ ➟ %@", category, subcategory];
+    if ([[row objectForKey:@"classifiers"] count] > 0) {
+        NSDictionary *classifiers = [[row objectForKey:@"classifiers"] objectAtIndex:0];
+
+        category = [classifiers objectForKey:@"category"];
+
+        NSString *subcategory = (NSString *)[classifiers objectForKey:@"subcategory"];
+        if (subcategory && ! [subcategory isEqual:@""]) {
+            category = [NSString stringWithFormat:@"%@ ➟ %@", category, subcategory];
+        }
     }
 
     UILabel *label;

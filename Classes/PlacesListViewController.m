@@ -29,8 +29,123 @@
 //
 
 #import "PlacesListViewController.h"
+#import "SimpleGeo+Places.h"
 
 
 @implementation PlacesListViewController
+
+@synthesize locationController;
+@synthesize simpleGeoController;
+@synthesize tableView;
+@synthesize tvCell;
+@synthesize placeData;
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+    CLLocationCoordinate2D lastLocation = [[self.locationController lastLocation] coordinate];
+
+    [self.simpleGeoController setDelegate:self];
+    [self.simpleGeoController.client getPlacesNear:[SGPoint pointWithLatitude:lastLocation.latitude
+                                                                    longitude:lastLocation.longitude]];
+}
+
+- (void)dealloc
+{
+    [placeData release];
+    [super dealloc];
+}
+
+#pragma mark SimpleGeoDelegate methods
+
+- (void)requestDidFail:(ASIHTTPRequest *)request
+{
+    NSLog(@"Request failed: %@: %i", [request responseStatusMessage], [request responseStatusCode]);
+}
+
+- (void)requestDidFinish:(ASIHTTPRequest *)request
+{
+    // NSLog(@"Request finished: %@", [request responseString]);
+}
+
+- (void)didLoadPlaces:(SGFeatureCollection *)places
+                 near:(SGPoint *)point
+             matching:(NSString *)query
+           inCategory:(NSString *)category
+{
+    self.placeData = places;
+
+    [tableView reloadData];
+}
+
+#pragma mark UITableViewDataSource methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)aTableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)aTableView
+ numberOfRowsInSection:(NSInteger)section
+{
+    if (placeData) {
+        return [self.placeData count];
+    }
+
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)aTableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *PlacesIdentifier = @"PlacesTableViewCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:PlacesIdentifier];
+    if (cell == nil) {
+        [[NSBundle mainBundle] loadNibNamed:@"PlacesTVCell"
+                                      owner:self
+                                    options:nil];
+        cell = tvCell;
+        self.tvCell = nil;
+    }
+
+    SGFeature *place = [[self.placeData features] objectAtIndex:indexPath.row];
+    NSString *name = [[place properties] objectForKey:@"name"];
+    NSString *category = @"";
+
+    if ([[[place properties] objectForKey:@"classifiers"] count] > 0) {
+        NSDictionary *classifiers = [[[place properties] objectForKey:@"classifiers"] objectAtIndex:0];
+
+        category = [classifiers objectForKey:@"category"];
+
+        NSString *subcategory = (NSString *)[classifiers objectForKey:@"subcategory"];
+        if (subcategory && ! [subcategory isEqual:@""]) {
+            category = [NSString stringWithFormat:@"%@ : %@", category, subcategory];
+        }
+    }
+
+    // TODO add distance to category
+
+    UILabel *label;
+    label = (UILabel *)[cell viewWithTag:1];
+    label.text = category;
+
+    label = (UILabel *)[cell viewWithTag:2];
+    label.text = name;
+
+    return cell;
+}
+
+#pragma mark UITableViewDelegate methods
+
+- (CGFloat)tableView:(UITableView *)aTableView
+heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == [self.placeData count] - 1) {
+        return 73.0;
+    }
+
+    return 70.0;
+}
 
 @end
