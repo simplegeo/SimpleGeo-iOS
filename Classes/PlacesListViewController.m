@@ -145,7 +145,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
         return 73.0;
     }
 
-    return 70.0;
+    return 60.0;
 }
 
 @end
