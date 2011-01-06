@@ -61,6 +61,8 @@
 		5DF1007B12D53AE30097CF47 /* buttonSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1007712D53AE30097CF47 /* buttonSearch.png */; };
 		5DF1007C12D53AE30097CF47 /* buttonSearchDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1007812D53AE30097CF47 /* buttonSearchDown.png */; };
 		5DF1008412D53B0E0097CF47 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1008312D53B0E0097CF47 /* header.png */; };
+		5DF1008D12D541F20097CF47 /* blurb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1008B12D541F20097CF47 /* blurb.png */; };
+		5DF1008E12D541F20097CF47 /* blurb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1008C12D541F20097CF47 /* blurb@2x.png */; };
 		5DF1FF7412D515040097CF47 /* ContextTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1FF7312D515040097CF47 /* ContextTVCell.xib */; };
 		5DF1FFED12D524980097CF47 /* bgGrid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */; };
 /* End PBXBuildFile section */
@@ -163,6 +165,8 @@
 		5DF1007712D53AE30097CF47 /* buttonSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonSearch.png; path = Assets/buttonSearch.png; sourceTree = "<group>"; };
 		5DF1007812D53AE30097CF47 /* buttonSearchDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonSearchDown.png; path = Assets/buttonSearchDown.png; sourceTree = "<group>"; };
 		5DF1008312D53B0E0097CF47 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header.png; path = Assets/header.png; sourceTree = "<group>"; };
+		5DF1008B12D541F20097CF47 /* blurb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blurb.png; path = Assets/blurb.png; sourceTree = "<group>"; };
+		5DF1008C12D541F20097CF47 /* blurb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blurb@2x.png"; path = "Assets/blurb@2x.png"; sourceTree = "<group>"; };
 		5DF1FF7312D515040097CF47 /* ContextTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextTVCell.xib; sourceTree = "<group>"; };
 		5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bgGrid@2x.png"; path = "Assets/bgGrid@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SimpleGeo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SimpleGeo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -370,6 +374,8 @@
 			children = (
 				5DF1004512D531DA0097CF47 /* bgGrid.png */,
 				5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */,
+				5DF1008B12D541F20097CF47 /* blurb.png */,
+				5DF1008C12D541F20097CF47 /* blurb@2x.png */,
 				5DF1007512D53AE30097CF47 /* buttonPin.png */,
 				5DF1006712D5356B0097CF47 /* buttonPin@2x.png */,
 				5DF1007612D53AE30097CF47 /* buttonPinDown.png */,
@@ -447,6 +453,8 @@
 				5DF1007B12D53AE30097CF47 /* buttonSearch.png in Resources */,
 				5DF1007C12D53AE30097CF47 /* buttonSearchDown.png in Resources */,
 				5DF1008412D53B0E0097CF47 /* header.png in Resources */,
+				5DF1008D12D541F20097CF47 /* blurb.png in Resources */,
+				5DF1008E12D541F20097CF47 /* blurb@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
