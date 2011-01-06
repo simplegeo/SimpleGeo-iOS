@@ -37,7 +37,7 @@
 
 - (IBAction)start:(id)sender
 {
-    [self pushViewController:self.tabBarController
+    [self pushViewController:tabBarController
                     animated:NO];
 }
 
