@@ -70,20 +70,7 @@
 - (void)didLoadContext:(NSDictionary *)context
                    for:(SGPoint *)point
 {
-    NSArray *features = [context objectForKey:@"features"];
-    for (NSDictionary *feature in features) {
-        NSString *category = [feature objectForKey:@"category"];
-        NSString *name = [feature objectForKey:@"name"];
-
-        NSString *subcategory = (NSString *)[feature objectForKey:@"subcategory"];
-        if (subcategory && [subcategory isEqual:@""]) {
-            category = subcategory;
-        }
-
-        NSLog(@"%@: %@", category, name);
-    }
-
-    self.contextData = features;
+    self.contextData = [context objectForKey:@"features"];
 
     [tableView reloadData];
 }
