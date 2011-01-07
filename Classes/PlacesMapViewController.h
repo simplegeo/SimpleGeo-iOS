@@ -34,15 +34,18 @@
 #import "SGController.h"
 
 
-@interface PlacesMapViewController : UIViewController
+@interface PlacesMapViewController : UIViewController <MKMapViewDelegate>
 {
     CLController *locationController;
     SGController *simpleGeoController;
     MKMapView *mapView;
+    SGFeatureCollection *placeData;
 }
 
-@property (nonatomic,retain) IBOutlet CLController *locationController;
-@property (nonatomic,retain) IBOutlet SGController *simpleGeoController;
-@property (nonatomic,retain) IBOutlet MKMapView *mapView;
+@property (nonatomic,assign) IBOutlet CLController *locationController;
+@property (nonatomic,assign) IBOutlet SGController *simpleGeoController;
+@property (nonatomic,assign) IBOutlet MKMapView *mapView;
+
+@property (nonatomic,retain) IBOutlet SGFeatureCollection *placeData;
 
 @end

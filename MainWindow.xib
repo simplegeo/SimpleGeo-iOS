@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="304"/>
+			<integer value="137"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -59,7 +59,7 @@
 			</object>
 			<object class="IBUIViewController" id="5358533">
 				<object class="IBUIView" key="IBUIView" id="102343694">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">274</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -254,6 +254,7 @@
 						</object>
 					</object>
 					<string key="NSFrameSize">{320, 411}</string>
+					<reference key="NSSuperview"/>
 					<object class="NSColor" key="IBUIBackgroundColor">
 						<int key="NSColorSpace">3</int>
 						<bytes key="NSWhite">MQA</bytes>
@@ -476,7 +477,6 @@
 					<object class="IBUITabBarItem" key="IBUITabBarItem" id="810505779">
 						<string key="IBUITitle">PLACES</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUITabBar"/>
 					</object>
 					<reference key="IBUIParentViewController" ref="49443349"/>
 					<reference key="IBUISimulatedStatusBarMetrics" ref="493307132"/>
@@ -504,11 +504,12 @@
 								<int key="NSvFlags">1298</int>
 								<object class="NSMutableArray" key="NSSubviews">
 									<bool key="EncodedWithXMLCoder">YES</bool>
-									<object class="IBUIImageView" id="279394923">
+									<object class="IBUIImageView" id="71846605">
 										<reference key="NSNextResponder" ref="482704749"/>
 										<int key="NSvFlags">1316</int>
 										<string key="NSFrame">{{0, 7}, {320, 460}}</string>
 										<reference key="NSSuperview" ref="482704749"/>
+										<reference key="NSWindow"/>
 										<int key="IBUIContentMode">9</int>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<float key="IBUIScaleFactor">2</float>
@@ -520,6 +521,7 @@
 										<int key="NSvFlags">1298</int>
 										<string key="NSFrame">{{0, 108}, {320, 303}}</string>
 										<reference key="NSSuperview" ref="482704749"/>
+										<reference key="NSWindow"/>
 										<object class="NSColor" key="IBUIBackgroundColor" id="304615659">
 											<int key="NSColorSpace">3</int>
 											<bytes key="NSWhite">MCAwAA</bytes>
@@ -545,6 +547,7 @@
 												<int key="NSvFlags">1316</int>
 												<string key="NSFrame">{{12, 3}, {130, 39}}</string>
 												<reference key="NSSuperview" ref="1009974364"/>
+												<reference key="NSWindow"/>
 												<bool key="IBUIOpaque">NO</bool>
 												<float key="IBUIScaleFactor">2</float>
 												<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -565,6 +568,7 @@
 												<int key="NSvFlags">1316</int>
 												<string key="NSFrame">{{178, 3}, {130, 39}}</string>
 												<reference key="NSSuperview" ref="1009974364"/>
+												<reference key="NSWindow"/>
 												<bool key="IBUIOpaque">NO</bool>
 												<float key="IBUIScaleFactor">2</float>
 												<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -583,6 +587,7 @@
 										</object>
 										<string key="NSFrame">{{0, 43}, {320, 44}}</string>
 										<reference key="NSSuperview" ref="482704749"/>
+										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 										<float key="IBUIScaleFactor">2</float>
@@ -617,6 +622,7 @@
 												<int key="NSvFlags">1298</int>
 												<string key="NSFrameSize">{320, 44}</string>
 												<reference key="NSSuperview" ref="16363514"/>
+												<reference key="NSWindow"/>
 												<int key="IBUIContentMode">9</int>
 												<bool key="IBUIUserInteractionEnabled">NO</bool>
 												<float key="IBUIScaleFactor">2</float>
@@ -628,6 +634,7 @@
 												<int key="NSvFlags">1316</int>
 												<string key="NSFrame">{{6, 6}, {43, 32}}</string>
 												<reference key="NSSuperview" ref="16363514"/>
+												<reference key="NSWindow"/>
 												<bool key="IBUIOpaque">NO</bool>
 												<float key="IBUIScaleFactor">2</float>
 												<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -648,6 +655,7 @@
 												<int key="NSvFlags">1313</int>
 												<string key="NSFrame">{{271, 6}, {43, 32}}</string>
 												<reference key="NSSuperview" ref="16363514"/>
+												<reference key="NSWindow"/>
 												<bool key="IBUIOpaque">NO</bool>
 												<float key="IBUIScaleFactor">2</float>
 												<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -666,6 +674,7 @@
 										</object>
 										<string key="NSFrameSize">{320, 44}</string>
 										<reference key="NSSuperview" ref="482704749"/>
+										<reference key="NSWindow"/>
 										<object class="NSColor" key="IBUIBackgroundColor">
 											<int key="NSColorSpace">3</int>
 											<bytes key="NSWhite">MQA</bytes>
@@ -675,8 +684,9 @@
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									</object>
 								</object>
-								<string key="NSFrameSize">{320, 411}</string>
+								<string key="NSFrame">{{0, 24}, {320, 411}}</string>
 								<reference key="NSSuperview"/>
+								<reference key="NSWindow"/>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MQA</bytes>
@@ -686,7 +696,6 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
 							<object class="IBUINavigationItem" key="IBUINavigationItem" id="1025956227">
-								<reference key="IBUINavigationBar"/>
 								<string key="IBUITitle">Item</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
@@ -827,7 +836,6 @@
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="753654517">
 							<string key="IBUITitle">CONTEXT</string>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-							<reference key="IBUITabBar"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="49443349"/>
 						<reference key="IBUISimulatedStatusBarMetrics" ref="493307132"/>
@@ -1070,6 +1078,14 @@
 						<reference key="destination" ref="481329298"/>
 					</object>
 					<int key="connectionID">380</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="375112643"/>
+						<reference key="destination" ref="5358533"/>
+					</object>
+					<int key="connectionID">382</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1340,7 +1356,7 @@
 							<reference ref="302719533"/>
 							<reference ref="16363514"/>
 							<reference ref="1009974364"/>
-							<reference ref="279394923"/>
+							<reference ref="71846605"/>
 						</object>
 						<reference key="parent" ref="481329298"/>
 					</object>
@@ -1613,7 +1629,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">375</int>
-						<reference key="object" ref="279394923"/>
+						<reference key="object" ref="71846605"/>
 						<reference key="parent" ref="482704749"/>
 					</object>
 				</object>
@@ -1753,7 +1769,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>PlacesMapViewController</string>
-					<string>{{430, 5}, {320, 480}}</string>
+					<string>{{766, 445}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<boolean value="YES"/>
 					<boolean value="YES"/>
@@ -1909,7 +1925,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">380</int>
+			<int key="maxID">383</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2067,12 +2083,14 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>locationController</string>
 							<string>mapView</string>
+							<string>placeData</string>
 							<string>simpleGeoController</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>CLController</string>
 							<string>MKMapView</string>
+							<string>SGFeatureCollection</string>
 							<string>SGController</string>
 						</object>
 					</object>
@@ -2082,6 +2100,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>locationController</string>
 							<string>mapView</string>
+							<string>placeData</string>
 							<string>simpleGeoController</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -2093,6 +2112,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">mapView</string>
 								<string key="candidateClassName">MKMapView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">placeData</string>
+								<string key="candidateClassName">SGFeatureCollection</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">simpleGeoController</string>
@@ -2192,6 +2215,21 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">Classes/SGController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">SGFeatureCollection</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">ext/SimpleGeo/SGFeatureCollection+Private.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">SGFeatureCollection</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">ext/SimpleGeo/SGFeatureCollection.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

@@ -37,6 +37,7 @@
 @synthesize locationController;
 @synthesize simpleGeoController;
 @synthesize mapView;
+@synthesize placeData;
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -50,6 +51,12 @@
 
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(lastLocation, 1000.0, 1000.0);
     [self.mapView setRegion:region];
+}
+
+- (void)dealloc
+{
+    [placeData release];
+    [super dealloc];
 }
 
 #pragma mark SimpleGeoDelegate methods
@@ -69,7 +76,57 @@
              matching:(NSString *)query
            inCategory:(NSString *)category
 {
-    NSLog(@"Places: %@", places);
+    self.placeData = places;
+
+    NSMutableArray *annotations = [NSMutableArray arrayWithCapacity:[places count]];
+
+    for (SGFeature *place in [places features]) {
+        SGPoint *point = (SGPoint *)[place geometry];
+        NSString *name = [[place properties] objectForKey:@"name"];
+        NSString *category = @"";
+
+        if ([[[place properties] objectForKey:@"classifiers"] count] > 0) {
+            NSDictionary *classifiers = [[[place properties] objectForKey:@"classifiers"] objectAtIndex:0];
+
+            category = [classifiers objectForKey:@"category"];
+
+            NSString *subcategory = (NSString *)[classifiers objectForKey:@"subcategory"];
+            if (subcategory && ! [subcategory isEqual:@""]) {
+                category = [NSString stringWithFormat:@"%@ : %@", category, subcategory];
+            }
+        }
+
+        MKPointAnnotation *annotation = [[[MKPointAnnotation alloc] init] autorelease];
+        CLLocationCoordinate2D coordinate;
+        coordinate.latitude = point.latitude;
+        coordinate.longitude = point.longitude;
+
+        annotation.coordinate = coordinate;
+        annotation.title = name;
+        annotation.subtitle = category;
+
+        [annotations addObject:annotation];
+    }
+
+    [self.mapView addAnnotations:annotations];
+}
+
+#pragma mark MKMapViewDelegate methods
+
+- (MKAnnotationView *)mapView:(MKMapView *)aMapView
+            viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    static NSString *AnnotationIdentifier = @"annotation";
+    MKPinAnnotationView *annotationView = (MKPinAnnotationView *)[aMapView dequeueReusableAnnotationViewWithIdentifier:AnnotationIdentifier];
+
+    if (annotationView == nil) {
+        annotationView = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationIdentifier] autorelease];
+        annotationView.canShowCallout = YES;
+        annotationView.animatesDrop = YES;
+    }
+
+    annotationView.annotation = annotation;
+    return annotationView;
 }
 
 @end
