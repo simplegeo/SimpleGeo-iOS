@@ -121,7 +121,8 @@
         category = [classifiers objectForKey:@"category"];
 
         NSString *subcategory = (NSString *)[classifiers objectForKey:@"subcategory"];
-        if (subcategory && ! [subcategory isEqual:@""]) {
+        if (subcategory && ! ([subcategory isEqual:@""] ||
+                              [subcategory isEqual:[NSNull null]])) {
             category = [NSString stringWithFormat:@"%@ ➟ %@", category, subcategory];
         }
     }
