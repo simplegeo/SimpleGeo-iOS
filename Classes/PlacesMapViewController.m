@@ -42,6 +42,8 @@
 {
     [super viewDidAppear:animated];
 
+    [self.mapView removeAnnotations:self.mapView.annotations];
+
     CLLocationCoordinate2D lastLocation = [[self.locationController lastLocation] coordinate];
 
     [self.simpleGeoController setDelegate:self];
