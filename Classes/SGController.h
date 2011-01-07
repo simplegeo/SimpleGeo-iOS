@@ -28,7 +28,7 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import "SimpleGeo.h"
+#import <SimpleGeo/SimpleGeo.h>
 
 
 @interface SGController : NSObject

@@ -29,8 +29,6 @@
 //
 
 #import "SGController.h"
-#import "SimpleGeo+Context.h"
-#import "SimpleGeo+Places.h"
 
 
 @implementation SGController

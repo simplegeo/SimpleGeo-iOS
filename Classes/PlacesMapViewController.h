@@ -29,7 +29,6 @@
 //
 
 #import <MapKit/MapKit.h>
-#import "SimpleGeo+Places.h"
 #import "CLController.h"
 #import "SGController.h"
 

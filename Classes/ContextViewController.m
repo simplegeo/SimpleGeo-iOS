@@ -29,7 +29,6 @@
 //
 
 #import "ContextViewController.h"
-#import "SimpleGeo+Context.h"
 
 
 @implementation ContextViewController
@@ -48,8 +47,8 @@
     CLLocationCoordinate2D lastLocation = [[self.locationController lastLocation] coordinate];
 
     [self.simpleGeoController setDelegate:self];
-    [self.simpleGeoController.client getContextFor:[SGPoint pointWithLatitude:lastLocation.latitude
-                                                                    longitude:lastLocation.longitude]];
+    [self.simpleGeoController.client getContextForPoint:[SGPoint pointWithLatitude:lastLocation.latitude
+                                                                         longitude:lastLocation.longitude]];
 
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(lastLocation, 1000.0, 1000.0);
     [self.mapView setRegion:region];
@@ -74,7 +73,7 @@
 }
 
 - (void)didLoadContext:(NSDictionary *)context
-                   for:(SGPoint *)point
+              forQuery:(NSDictionary *)query
 {
     self.contextData = [context objectForKey:@"features"];
 

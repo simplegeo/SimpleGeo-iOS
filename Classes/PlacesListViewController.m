@@ -29,7 +29,6 @@
 //
 
 #import "PlacesListViewController.h"
-#import "SimpleGeo+Places.h"
 
 
 @implementation PlacesListViewController
@@ -70,9 +69,7 @@
 }
 
 - (void)didLoadPlaces:(SGFeatureCollection *)places
-                 near:(SGPoint *)point
-             matching:(NSString *)query
-           inCategory:(NSString *)category
+             forQuery:(NSDictionary *)query
 {
     self.placeData = places;
 

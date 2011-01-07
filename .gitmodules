@@ -1,0 +1,3 @@
+[submodule "ext/SimpleGeo.framework"]
+	path = ext/SimpleGeo.framework
+	url = git://github.com/simplegeo/SimpleGeo.framework.git
