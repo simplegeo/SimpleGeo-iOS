@@ -53,6 +53,7 @@
 		5DF1FFED12D524980097CF47 /* bgGrid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */; };
 		5DF651A412D66EDB00664279 /* PlacesTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF651A312D66EDB00664279 /* PlacesTVCell.xib */; };
 		5DF6537E12D7B32600664279 /* SimpleGeo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF6537D12D7B32600664279 /* SimpleGeo.framework */; };
+		5DF654C212DB8D1C00664279 /* compass_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF654C112DB8D1C00664279 /* compass_57.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,8 @@
 		5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bgGrid@2x.png"; path = "Assets/bgGrid@2x.png"; sourceTree = "<group>"; };
 		5DF651A312D66EDB00664279 /* PlacesTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesTVCell.xib; sourceTree = "<group>"; };
 		5DF6537D12D7B32600664279 /* SimpleGeo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SimpleGeo.framework; sourceTree = "<group>"; };
+		5DF654C112DB8D1C00664279 /* compass_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass_57.png; path = Assets/compass_57.png; sourceTree = "<group>"; };
+		5DF654CF12DB91A300664279 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SimpleGeo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SimpleGeo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +202,7 @@
 				8D1107310486CEB800E47090 /* SimpleGeo-Info.plist */,
 				5DF1FF7312D515040097CF47 /* ContextTVCell.xib */,
 				5DF651A312D66EDB00664279 /* PlacesTVCell.xib */,
+				5DF654CF12DB91A300664279 /* Entitlements.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -231,6 +235,7 @@
 		5DF100FF12D57C550097CF47 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				5DF654C112DB8D1C00664279 /* compass_57.png */,
 				5DF100F812D57BEE0097CF47 /* compass.png */,
 			);
 			name = Icons;
@@ -340,6 +345,7 @@
 				5DF100B612D548B10097CF47 /* mapActive@2x.png in Resources */,
 				5DF100F912D57BEE0097CF47 /* compass.png in Resources */,
 				5DF651A412D66EDB00664279 /* PlacesTVCell.xib in Resources */,
+				5DF654C212DB8D1C00664279 /* compass_57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
