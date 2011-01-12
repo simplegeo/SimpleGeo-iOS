@@ -14,6 +14,12 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		5D1DA94412DE466700556B20 /* AbstractPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DA94312DE466700556B20 /* AbstractPlacesViewController.m */; };
+		5D1DA98F12DE685600556B20 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DA98E12DE685600556B20 /* Icon@2x.png */; };
+		5D1DA99112DE68A800556B20 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DA99012DE68A800556B20 /* Icon-72.png */; };
+		5D1DA99512DE69DB00556B20 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DA99212DE69DB00556B20 /* Icon-Small-50.png */; };
+		5D1DA99612DE69DB00556B20 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DA99312DE69DB00556B20 /* Icon-Small.png */; };
+		5D1DA99712DE69DB00556B20 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DA99412DE69DB00556B20 /* Icon-Small@2x.png */; };
+		5D1DA9BB12DE6C5500556B20 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DA9BA12DE6C5500556B20 /* Default.png */; };
 		5D55A61412BA9845004AE0EB /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A61312BA9845004AE0EB /* RootNavigationController.m */; };
 		5D55A61712BA9BB1004AE0EB /* PlacesNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A61612BA9BB1004AE0EB /* PlacesNavigationController.m */; };
 		5D55A6A012BAD92C004AE0EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A69F12BAD92C004AE0EB /* CoreLocation.framework */; };
@@ -54,7 +60,7 @@
 		5DF1FFED12D524980097CF47 /* bgGrid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */; };
 		5DF651A412D66EDB00664279 /* PlacesTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF651A312D66EDB00664279 /* PlacesTVCell.xib */; };
 		5DF6537E12D7B32600664279 /* SimpleGeo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF6537D12D7B32600664279 /* SimpleGeo.framework */; };
-		5DF654C212DB8D1C00664279 /* compass_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF654C112DB8D1C00664279 /* compass_57.png */; };
+		5DF654C212DB8D1C00664279 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF654C112DB8D1C00664279 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +75,12 @@
 		32CA4F630368D1EE00C91783 /* SimpleGeo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleGeo_Prefix.pch; sourceTree = "<group>"; };
 		5D1DA94212DE466700556B20 /* AbstractPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractPlacesViewController.h; sourceTree = "<group>"; };
 		5D1DA94312DE466700556B20 /* AbstractPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractPlacesViewController.m; sourceTree = "<group>"; };
+		5D1DA98E12DE685600556B20 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Assets/Icon@2x.png"; sourceTree = "<group>"; };
+		5D1DA99012DE68A800556B20 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Assets/Icon-72.png"; sourceTree = "<group>"; };
+		5D1DA99212DE69DB00556B20 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Assets/Icon-Small-50.png"; sourceTree = "<group>"; };
+		5D1DA99312DE69DB00556B20 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Assets/Icon-Small.png"; sourceTree = "<group>"; };
+		5D1DA99412DE69DB00556B20 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Assets/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		5D1DA9BA12DE6C5500556B20 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Assets/Default.png; sourceTree = "<group>"; };
 		5D55A61212BA9845004AE0EB /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		5D55A61312BA9845004AE0EB /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		5D55A61512BA9BB1004AE0EB /* PlacesNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesNavigationController.h; sourceTree = "<group>"; };
@@ -116,7 +128,7 @@
 		5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bgGrid@2x.png"; path = "Assets/bgGrid@2x.png"; sourceTree = "<group>"; };
 		5DF651A312D66EDB00664279 /* PlacesTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesTVCell.xib; sourceTree = "<group>"; };
 		5DF6537D12D7B32600664279 /* SimpleGeo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SimpleGeo.framework; sourceTree = "<group>"; };
-		5DF654C112DB8D1C00664279 /* compass_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass_57.png; path = Assets/compass_57.png; sourceTree = "<group>"; };
+		5DF654C112DB8D1C00664279 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Assets/Icon.png; sourceTree = "<group>"; };
 		5DF654CF12DB91A300664279 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SimpleGeo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SimpleGeo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,7 +252,12 @@
 		5DF100FF12D57C550097CF47 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				5DF654C112DB8D1C00664279 /* compass_57.png */,
+				5DF654C112DB8D1C00664279 /* Icon.png */,
+				5D1DA98E12DE685600556B20 /* Icon@2x.png */,
+				5D1DA99012DE68A800556B20 /* Icon-72.png */,
+				5D1DA99212DE69DB00556B20 /* Icon-Small-50.png */,
+				5D1DA99312DE69DB00556B20 /* Icon-Small.png */,
+				5D1DA99412DE69DB00556B20 /* Icon-Small@2x.png */,
 				5DF100F812D57BEE0097CF47 /* compass.png */,
 			);
 			name = Icons;
@@ -249,6 +266,7 @@
 		5DF1FFEA12D5248F0097CF47 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5D1DA9BA12DE6C5500556B20 /* Default.png */,
 				5DF1004512D531DA0097CF47 /* bgGrid.png */,
 				5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */,
 				5DF1008B12D541F20097CF47 /* blurb.png */,
@@ -350,7 +368,13 @@
 				5DF100B612D548B10097CF47 /* mapActive@2x.png in Resources */,
 				5DF100F912D57BEE0097CF47 /* compass.png in Resources */,
 				5DF651A412D66EDB00664279 /* PlacesTVCell.xib in Resources */,
-				5DF654C212DB8D1C00664279 /* compass_57.png in Resources */,
+				5DF654C212DB8D1C00664279 /* Icon.png in Resources */,
+				5D1DA98F12DE685600556B20 /* Icon@2x.png in Resources */,
+				5D1DA99112DE68A800556B20 /* Icon-72.png in Resources */,
+				5D1DA99512DE69DB00556B20 /* Icon-Small-50.png in Resources */,
+				5D1DA99612DE69DB00556B20 /* Icon-Small.png in Resources */,
+				5D1DA99712DE69DB00556B20 /* Icon-Small@2x.png in Resources */,
+				5D1DA9BB12DE6C5500556B20 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
