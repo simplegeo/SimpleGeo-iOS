@@ -35,9 +35,9 @@
 
 @synthesize locationController;
 @synthesize simpleGeoController;
-@synthesize mapView;
 @synthesize tableView;
 @synthesize tvCell;
+@synthesize tvMapCell;
 @synthesize contextData;
 
 - (void)viewDidAppear:(BOOL)animated
@@ -49,9 +49,6 @@
     [self.simpleGeoController setDelegate:self];
     [self.simpleGeoController.client getContextForPoint:[SGPoint pointWithLatitude:lastLocation.latitude
                                                                          longitude:lastLocation.longitude]];
-
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(lastLocation, 1000.0, 1000.0);
-    [self.mapView setRegion:region];
 }
 
 - (void)dealloc
@@ -91,7 +88,7 @@
  numberOfRowsInSection:(NSInteger)section
 {
     if (contextData) {
-        return [contextData count];
+        return [contextData count] + 1;
     }
 
     return 0;
@@ -100,40 +97,61 @@
 - (UITableViewCell *)tableView:(UITableView *)aTableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *ContextIdentifier = @"ContextTableViewCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ContextIdentifier];
-    if (cell == nil) {
-        [[NSBundle mainBundle] loadNibNamed:@"ContextTVCell"
-                                      owner:self
-                                    options:nil];
-        cell = tvCell;
-        self.tvCell = nil;
-    }
-
-    NSDictionary *row = [contextData objectAtIndex:indexPath.row];
-    NSString *name = [row objectForKey:@"name"];
-    NSString *category = @"";
-
-    if ([[row objectForKey:@"classifiers"] count] > 0) {
-        NSDictionary *classifiers = [[row objectForKey:@"classifiers"] objectAtIndex:0];
-
-        category = [classifiers objectForKey:@"category"];
-
-        NSString *subcategory = (NSString *)[classifiers objectForKey:@"subcategory"];
-        if (subcategory && ! ([subcategory isEqual:@""] ||
-                              [subcategory isEqual:[NSNull null]])) {
-            category = [NSString stringWithFormat:@"%@ ➟ %@", category, subcategory];
+    if (indexPath.row == 0) {
+        static NSString *ContextMapIdentifier = @"ContextTableViewMapCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ContextMapIdentifier];
+        if (cell == nil) {
+            [[NSBundle mainBundle] loadNibNamed:@"ContextTVCells"
+                                          owner:self
+                                        options:nil];
+            cell = tvMapCell;
+            self.tvMapCell = nil;
         }
+
+        CLLocationCoordinate2D lastLocation = [[self.locationController lastLocation] coordinate];
+
+
+        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(lastLocation, 1000.0, 1000.0);
+        MKMapView *mapView = (MKMapView *)[cell viewWithTag:1];
+        [mapView setRegion:region];
+
+        return cell;
+    } else {
+        static NSString *ContextIdentifier = @"ContextTableViewCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ContextIdentifier];
+        if (cell == nil) {
+            [[NSBundle mainBundle] loadNibNamed:@"ContextTVCells"
+                                          owner:self
+                                        options:nil];
+            cell = tvCell;
+            self.tvCell = nil;
+        }
+
+        NSDictionary *row = [contextData objectAtIndex:indexPath.row - 1];
+        NSString *name = [row objectForKey:@"name"];
+        NSString *category = @"";
+
+        if ([[row objectForKey:@"classifiers"] count] > 0) {
+            NSDictionary *classifiers = [[row objectForKey:@"classifiers"] objectAtIndex:0];
+
+            category = [classifiers objectForKey:@"category"];
+
+            NSString *subcategory = (NSString *)[classifiers objectForKey:@"subcategory"];
+            if (subcategory && ! ([subcategory isEqual:@""] ||
+                                  [subcategory isEqual:[NSNull null]])) {
+                category = [NSString stringWithFormat:@"%@ ➟ %@", category, subcategory];
+            }
+        }
+
+        UILabel *label;
+        label = (UILabel *)[cell viewWithTag:1];
+        label.text = [category uppercaseString];
+
+        label = (UILabel *)[cell viewWithTag:2];
+        label.text = name;
+
+        return cell;
     }
-
-    UILabel *label;
-    label = (UILabel *)[cell viewWithTag:1];
-    label.text = [category uppercaseString];
-
-    label = (UILabel *)[cell viewWithTag:2];
-    label.text = name;
-
-    return cell;
 }
 
 #pragma mark UITableViewDelegate methods
@@ -141,8 +159,10 @@
 - (CGFloat)tableView:(UITableView *)aTableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == [contextData count] - 1) {
-        return 87.0;
+    if (indexPath.row == 0) {
+        return 141.0;
+    } else if (indexPath.row == [contextData count]) {
+        return 86.0;
     }
 
     return 80.0;

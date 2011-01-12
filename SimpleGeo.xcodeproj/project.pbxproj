@@ -49,7 +49,7 @@
 		5DF100B512D548B10097CF47 /* mapActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF100B112D548B10097CF47 /* mapActive.png */; };
 		5DF100B612D548B10097CF47 /* mapActive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF100B212D548B10097CF47 /* mapActive@2x.png */; };
 		5DF100F912D57BEE0097CF47 /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF100F812D57BEE0097CF47 /* compass.png */; };
-		5DF1FF7412D515040097CF47 /* ContextTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1FF7312D515040097CF47 /* ContextTVCell.xib */; };
+		5DF1FF7412D515040097CF47 /* ContextTVCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1FF7312D515040097CF47 /* ContextTVCells.xib */; };
 		5DF1FFED12D524980097CF47 /* bgGrid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */; };
 		5DF651A412D66EDB00664279 /* PlacesTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF651A312D66EDB00664279 /* PlacesTVCell.xib */; };
 		5DF6537E12D7B32600664279 /* SimpleGeo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF6537D12D7B32600664279 /* SimpleGeo.framework */; };
@@ -109,7 +109,7 @@
 		5DF100B112D548B10097CF47 /* mapActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapActive.png; path = Assets/mapActive.png; sourceTree = "<group>"; };
 		5DF100B212D548B10097CF47 /* mapActive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapActive@2x.png"; path = "Assets/mapActive@2x.png"; sourceTree = "<group>"; };
 		5DF100F812D57BEE0097CF47 /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass.png; path = Assets/compass.png; sourceTree = "<group>"; };
-		5DF1FF7312D515040097CF47 /* ContextTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextTVCell.xib; sourceTree = "<group>"; };
+		5DF1FF7312D515040097CF47 /* ContextTVCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextTVCells.xib; sourceTree = "<group>"; };
 		5DF1FFEC12D524980097CF47 /* bgGrid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bgGrid@2x.png"; path = "Assets/bgGrid@2x.png"; sourceTree = "<group>"; };
 		5DF651A312D66EDB00664279 /* PlacesTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesTVCell.xib; sourceTree = "<group>"; };
 		5DF6537D12D7B32600664279 /* SimpleGeo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SimpleGeo.framework; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 				5DF100FF12D57C550097CF47 /* Icons */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* SimpleGeo-Info.plist */,
-				5DF1FF7312D515040097CF47 /* ContextTVCell.xib */,
+				5DF1FF7312D515040097CF47 /* ContextTVCells.xib */,
 				5DF651A312D66EDB00664279 /* PlacesTVCell.xib */,
 				5DF654CF12DB91A300664279 /* Entitlements.plist */,
 			);
@@ -320,7 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				5DF1FF7412D515040097CF47 /* ContextTVCell.xib in Resources */,
+				5DF1FF7412D515040097CF47 /* ContextTVCells.xib in Resources */,
 				5DF1FFED12D524980097CF47 /* bgGrid@2x.png in Resources */,
 				5DF1004612D531DA0097CF47 /* bgGrid.png in Resources */,
 				5DF1006612D5352B0097CF47 /* header@2x.png in Resources */,

@@ -37,18 +37,18 @@
 {
     CLController *locationController;
     SGController *simpleGeoController;
-    MKMapView *mapView;
     UITableView *tableView;
     UITableViewCell *tvCell;
+    UITableViewCell *tvMapCell;
 
     NSArray *contextData;
 }
 
 @property (nonatomic,assign) IBOutlet CLController *locationController;
 @property (nonatomic,assign) IBOutlet SGController *simpleGeoController;
-@property (nonatomic,assign) IBOutlet MKMapView *mapView;
 @property (nonatomic,assign) IBOutlet UITableView *tableView;
 @property (nonatomic,assign) IBOutlet UITableViewCell *tvCell;
+@property (nonatomic,assign) IBOutlet UITableViewCell *tvMapCell;
 
 @property (nonatomic,retain) NSArray *contextData;
 
