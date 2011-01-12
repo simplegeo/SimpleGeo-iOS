@@ -1,5 +1,5 @@
 //
-//  MapViewController.h
+//  AbstractPlacesViewController.m
 //  SimpleGeo
 //
 //  Copyright (c) 2010, SimpleGeo Inc.
@@ -31,11 +31,53 @@
 #import "AbstractPlacesViewController.h"
 
 
-@interface PlacesMapViewController : AbstractPlacesViewController <MKMapViewDelegate>
+@implementation AbstractPlacesViewController
+
+@synthesize locationController;
+@synthesize simpleGeoController;
+@synthesize placeData;
+
+- (void)viewDidAppear:(BOOL)animated
 {
-    MKMapView *mapView;
+    [super viewDidAppear:animated];
+    [self loadPlacesForCurrentLocation:nil];
 }
 
-@property (nonatomic,assign) IBOutlet MKMapView *mapView;
+- (void)dealloc
+{
+    [placeData release];
+    [super dealloc];
+}
+
+- (IBAction)loadPlacesForCurrentLocation:(id)sender
+{
+    CLLocationCoordinate2D lastLocation = [[self.locationController lastLocation] coordinate];
+    [self loadPlacesForLocation:lastLocation];
+}
+
+- (void)loadPlacesForLocation:(CLLocationCoordinate2D)location
+{
+    [self.simpleGeoController setDelegate:self];
+    [self.simpleGeoController.client getPlacesNear:[SGPoint pointWithLatitude:location.latitude
+                                                                    longitude:location.longitude]];
+}
+
+#pragma mark SimpleGeoDelegate methods
+
+- (void)requestDidFail:(ASIHTTPRequest *)request
+{
+    NSLog(@"Request failed: %@: %i", [request responseStatusMessage], [request responseStatusCode]);
+}
+
+- (void)requestDidFinish:(ASIHTTPRequest *)request
+{
+    // NSLog(@"Request finished: %@", [request responseString]);
+}
+
+- (void)didLoadPlaces:(SGFeatureCollection *)places
+             forQuery:(NSDictionary *)query
+{
+    self.placeData = places;
+}
 
 @end

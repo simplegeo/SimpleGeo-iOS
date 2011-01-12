@@ -28,27 +28,16 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import "CLController.h"
-#import "SGController.h"
+#import "AbstractPlacesViewController.h"
 
 
-@interface PlacesListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface PlacesListViewController : AbstractPlacesViewController <UITableViewDelegate, UITableViewDataSource>
 {
-    CLController *locationController;
-    SGController *simpleGeoController;
     UITableView *tableView;
     UITableViewCell *tvCell;
-
-    SGFeatureCollection *placeData;
 }
 
-@property (nonatomic,assign) IBOutlet CLController *locationController;
-@property (nonatomic,assign) IBOutlet SGController *simpleGeoController;
 @property (nonatomic,assign) IBOutlet UITableView *tableView;
 @property (nonatomic,assign) IBOutlet UITableViewCell *tvCell;
-
-@property (nonatomic,retain) SGFeatureCollection *placeData;
-
-- (IBAction)loadPlacesForCurrentLocation:(id)sender;
 
 @end

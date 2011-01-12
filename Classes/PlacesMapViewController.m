@@ -33,53 +33,25 @@
 
 @implementation PlacesMapViewController
 
-@synthesize locationController;
-@synthesize simpleGeoController;
 @synthesize mapView;
-@synthesize placeData;
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    [self loadPlacesForCurrentLocation:nil];
-}
-
-- (void)dealloc
-{
-    [placeData release];
-    [super dealloc];
-}
-
-- (IBAction)loadPlacesForCurrentLocation:(id)sender
+- (void)loadPlacesForLocation:(CLLocationCoordinate2D)location
 {
     [self.mapView removeAnnotations:self.mapView.annotations];
 
-    CLLocationCoordinate2D lastLocation = [[self.locationController lastLocation] coordinate];
+    [super loadPlacesForLocation:location];
 
-    [self.simpleGeoController setDelegate:self];
-    [self.simpleGeoController.client getPlacesNear:[SGPoint pointWithLatitude:lastLocation.latitude
-                                                                    longitude:lastLocation.longitude]];
-
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(lastLocation, 1000.0, 1000.0);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(location, 1000.0, 1000.0);
     [self.mapView setRegion:region];
 }
 
 #pragma mark SimpleGeoDelegate methods
 
-- (void)requestDidFail:(ASIHTTPRequest *)request
-{
-    NSLog(@"Request failed: %@: %i", [request responseStatusMessage], [request responseStatusCode]);
-}
-
-- (void)requestDidFinish:(ASIHTTPRequest *)request
-{
-    // NSLog(@"Request finished: %@", [request responseString]);
-}
-
 - (void)didLoadPlaces:(SGFeatureCollection *)places
              forQuery:(NSDictionary *)query
 {
-    self.placeData = places;
+    [super didLoadPlaces:places
+                forQuery:query];
 
     NSMutableArray *annotations = [NSMutableArray arrayWithCapacity:[places count]];
 

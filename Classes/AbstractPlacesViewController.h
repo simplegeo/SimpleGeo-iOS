@@ -1,5 +1,5 @@
 //
-//  MapViewController.h
+//  AbstractPlacesViewController.h
 //  SimpleGeo
 //
 //  Copyright (c) 2010, SimpleGeo Inc.
@@ -28,14 +28,23 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import "AbstractPlacesViewController.h"
+#import <MapKit/MapKit.h>
+#import "CLController.h"
+#import "SGController.h"
 
 
-@interface PlacesMapViewController : AbstractPlacesViewController <MKMapViewDelegate>
+@interface AbstractPlacesViewController : UIViewController
 {
-    MKMapView *mapView;
+    CLController *locationController;
+    SGController *simpleGeoController;
+    SGFeatureCollection *placeData;
 }
 
-@property (nonatomic,assign) IBOutlet MKMapView *mapView;
+@property (nonatomic,assign) IBOutlet CLController *locationController;
+@property (nonatomic,assign) IBOutlet SGController *simpleGeoController;
+@property (nonatomic,retain) IBOutlet SGFeatureCollection *placeData;
+
+- (IBAction)loadPlacesForCurrentLocation:(id)sender;
+- (void)loadPlacesForLocation:(CLLocationCoordinate2D)location;
 
 @end

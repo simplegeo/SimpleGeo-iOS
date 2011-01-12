@@ -33,49 +33,16 @@
 
 @implementation PlacesListViewController
 
-@synthesize locationController;
-@synthesize simpleGeoController;
 @synthesize tableView;
 @synthesize tvCell;
-@synthesize placeData;
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    [self loadPlacesForCurrentLocation:nil];
-}
-
-- (void)dealloc
-{
-    [placeData release];
-    [super dealloc];
-}
-
-- (IBAction)loadPlacesForCurrentLocation:(id)sender
-{
-    CLLocationCoordinate2D lastLocation = [[self.locationController lastLocation] coordinate];
-
-    [self.simpleGeoController setDelegate:self];
-    [self.simpleGeoController.client getPlacesNear:[SGPoint pointWithLatitude:lastLocation.latitude
-                                                                    longitude:lastLocation.longitude]];
-}
 
 #pragma mark SimpleGeoDelegate methods
-
-- (void)requestDidFail:(ASIHTTPRequest *)request
-{
-    NSLog(@"Request failed: %@: %i", [request responseStatusMessage], [request responseStatusCode]);
-}
-
-- (void)requestDidFinish:(ASIHTTPRequest *)request
-{
-    // NSLog(@"Request finished: %@", [request responseString]);
-}
 
 - (void)didLoadPlaces:(SGFeatureCollection *)places
              forQuery:(NSDictionary *)query
 {
-    self.placeData = places;
+    [super didLoadPlaces:places
+                forQuery:query];
 
     [tableView reloadData];
 }
