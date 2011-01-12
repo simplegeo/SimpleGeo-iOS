@@ -52,4 +52,6 @@
 
 @property (nonatomic,retain) NSArray *contextData;
 
+- (IBAction)loadContextForCurrentLocation:(id)sender;
+
 @end

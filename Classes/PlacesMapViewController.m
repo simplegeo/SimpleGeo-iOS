@@ -41,7 +41,17 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self loadPlacesForCurrentLocation:nil];
+}
 
+- (void)dealloc
+{
+    [placeData release];
+    [super dealloc];
+}
+
+- (IBAction)loadPlacesForCurrentLocation:(id)sender
+{
     [self.mapView removeAnnotations:self.mapView.annotations];
 
     CLLocationCoordinate2D lastLocation = [[self.locationController lastLocation] coordinate];
@@ -52,12 +62,6 @@
 
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(lastLocation, 1000.0, 1000.0);
     [self.mapView setRegion:region];
-}
-
-- (void)dealloc
-{
-    [placeData release];
-    [super dealloc];
 }
 
 #pragma mark SimpleGeoDelegate methods

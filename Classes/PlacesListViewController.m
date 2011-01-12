@@ -42,18 +42,22 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-
-    CLLocationCoordinate2D lastLocation = [[self.locationController lastLocation] coordinate];
-
-    [self.simpleGeoController setDelegate:self];
-    [self.simpleGeoController.client getPlacesNear:[SGPoint pointWithLatitude:lastLocation.latitude
-                                                                    longitude:lastLocation.longitude]];
+    [self loadPlacesForCurrentLocation:nil];
 }
 
 - (void)dealloc
 {
     [placeData release];
     [super dealloc];
+}
+
+- (IBAction)loadPlacesForCurrentLocation:(id)sender
+{
+    CLLocationCoordinate2D lastLocation = [[self.locationController lastLocation] coordinate];
+
+    [self.simpleGeoController setDelegate:self];
+    [self.simpleGeoController.client getPlacesNear:[SGPoint pointWithLatitude:lastLocation.latitude
+                                                                    longitude:lastLocation.longitude]];
 }
 
 #pragma mark SimpleGeoDelegate methods

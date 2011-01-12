@@ -49,4 +49,6 @@
 
 @property (nonatomic,retain) SGFeatureCollection *placeData;
 
+- (IBAction)loadPlacesForCurrentLocation:(id)sender;
+
 @end
