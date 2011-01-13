@@ -477,7 +477,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Seth Fitzsimmons (DU9AW65LQE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: SimpleGeo, Inc.";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,7 +492,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = SimpleGeo;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C7014D4E-B161-46D8-A9C8-30F5019A6FA7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "44DE45E2-D853-4CC3-A035-16F6774F6AA9";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = "Ad-Hoc Distribution";
