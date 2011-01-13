@@ -33,12 +33,41 @@
 
 @implementation RootNavigationController
 
-@synthesize tabBarController;
+@synthesize contextController;
+@synthesize placesMapController;
+@synthesize placesListController;
+@synthesize activePlacesController;
 
-- (IBAction)start:(id)sender
+- (IBAction)displayContext:(id)sender
 {
-    [self pushViewController:tabBarController
+    [self popToRootViewControllerAnimated:NO];
+    [self pushViewController:contextController
                     animated:NO];
+}
+
+- (IBAction)displayPlaces:(id)sender
+{
+    [self popToRootViewControllerAnimated:NO];
+    [self pushViewController:activePlacesController
+                    animated:NO];
+}
+
+- (IBAction)displayPlacesMap:(id)sender
+{
+    [self popToRootViewControllerAnimated:NO];
+    [self pushViewController:placesMapController
+                    animated:NO];
+
+    self.activePlacesController = placesMapController;
+}
+
+- (IBAction)displayPlacesList:(id)sender
+{
+    [self popToRootViewControllerAnimated:NO];
+    [self pushViewController:placesListController
+                    animated:NO];
+
+    self.activePlacesController = placesListController;
 }
 
 @end

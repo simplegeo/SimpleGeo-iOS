@@ -39,7 +39,7 @@
 			</object>
 			<object class="IBUITableViewCell" id="793524340">
 				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">292</int>
+				<int key="NSvFlags">268</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="IBUIView" id="922161295">
@@ -50,7 +50,7 @@
 							<object class="IBUIImageView" id="1008559755">
 								<reference key="NSNextResponder" ref="922161295"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{21, 0}, {279, 49}}</string>
+								<string key="NSFrame">{{21, 20}, {279, 49}}</string>
 								<reference key="NSSuperview" ref="922161295"/>
 								<object class="NSColor" key="IBUIBackgroundColor" id="1018345759">
 									<int key="NSColorSpace">3</int>
@@ -84,7 +84,7 @@
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									</object>
 								</object>
-								<string key="NSFrame">{{20, 1}, {280, 49}}</string>
+								<string key="NSFrame">{{20, 21}, {280, 49}}</string>
 								<reference key="NSSuperview" ref="922161295"/>
 								<reference key="IBUIBackgroundColor" ref="979556336"/>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -94,7 +94,7 @@
 							<object class="IBUILabel" id="696248730">
 								<reference key="NSNextResponder" ref="922161295"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{29, 3}, {262, 26}}</string>
+								<string key="NSFrame">{{29, 23}, {262, 26}}</string>
 								<reference key="NSSuperview" ref="922161295"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -120,7 +120,7 @@
 							<object class="IBUILabel" id="609570283">
 								<reference key="NSNextResponder" ref="922161295"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{29, 25}, {272, 22}}</string>
+								<string key="NSFrame">{{29, 45}, {272, 22}}</string>
 								<reference key="NSSuperview" ref="922161295"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -144,7 +144,7 @@
 								<float key="IBUIMinimumFontSize">10</float>
 							</object>
 						</object>
-						<string key="NSFrameSize">{320, 60}</string>
+						<string key="NSFrameSize">{320, 80}</string>
 						<reference key="NSSuperview" ref="793524340"/>
 						<reference key="IBUIBackgroundColor" ref="979556336"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -154,7 +154,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</object>
-				<string key="NSFrameSize">{320, 60}</string>
+				<string key="NSFrameSize">{320, 80}</string>
 				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
@@ -256,7 +256,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>PlacesListViewController</string>
 					<string>UIResponder</string>
-					<string>{{1022, 972}, {320, 60}}</string>
+					<string>{{1022, 952}, {320, 80}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -298,52 +298,32 @@
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
-					<string key="className">CLController</string>
-					<string key="superclassName">NSObject</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/CLController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">NSObject</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">ext/SimpleGeo/SimpleGeo+Context.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">NSObject</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">ext/SimpleGeo/SimpleGeo+Places.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">NSObject</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">ext/SimpleGeo/SimpleGeo.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">PlacesListViewController</string>
+					<string key="className">AbstractPlacesViewController</string>
 					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">loadPlacesForCurrentLocation:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">loadPlacesForCurrentLocation:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">loadPlacesForCurrentLocation:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>locationController</string>
+							<string>placeData</string>
 							<string>simpleGeoController</string>
-							<string>tableView</string>
-							<string>tvCell</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>CLController</string>
+							<string>SGFeatureCollection</string>
 							<string>SGController</string>
-							<string>UITableView</string>
-							<string>UITableViewCell</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -351,9 +331,8 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>locationController</string>
+							<string>placeData</string>
 							<string>simpleGeoController</string>
-							<string>tableView</string>
-							<string>tvCell</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -362,9 +341,53 @@
 								<string key="candidateClassName">CLController</string>
 							</object>
 							<object class="IBToOneOutletInfo">
+								<string key="name">placeData</string>
+								<string key="candidateClassName">SGFeatureCollection</string>
+							</object>
+							<object class="IBToOneOutletInfo">
 								<string key="name">simpleGeoController</string>
 								<string key="candidateClassName">SGController</string>
 							</object>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Classes/AbstractPlacesViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">CLController</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Classes/CLController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">PlacesListViewController</string>
+					<string key="superclassName">AbstractPlacesViewController</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>tableView</string>
+							<string>tvCell</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>UITableView</string>
+							<string>UITableViewCell</string>
+						</object>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>tableView</string>
+							<string>tvCell</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBToOneOutletInfo">
 								<string key="name">tableView</string>
 								<string key="candidateClassName">UITableView</string>
@@ -465,6 +488,27 @@
 					<string key="className">NSObject</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">SimpleGeo.framework/Headers/SimpleGeo+Context.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">SimpleGeo.framework/Headers/SimpleGeo+Places.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">SimpleGeo.framework/Headers/SimpleGeo.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">UIKit.framework/Headers/UIAccessibility.h</string>
 					</object>
 				</object>
@@ -487,6 +531,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">YAJL.framework/Headers/NSObject+YAJL.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">SGFeatureCollection</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">SimpleGeo.framework/Headers/SGFeatureCollection.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

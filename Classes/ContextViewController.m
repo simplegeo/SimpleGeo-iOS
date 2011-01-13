@@ -166,7 +166,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     if (indexPath.row == 0) {
         return 141.0;
     } else if (indexPath.row == [contextData count]) {
-        return 86.0;
+        return 81.0;
     }
 
     return 80.0;

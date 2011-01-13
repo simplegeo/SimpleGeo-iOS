@@ -111,7 +111,7 @@
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == [self.placeData count] - 1) {
-        return 73.0;
+        return 87.0;
     }
 
     return 60.0;

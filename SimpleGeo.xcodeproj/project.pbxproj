@@ -20,8 +20,11 @@
 		5D1DA99612DE69DB00556B20 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DA99312DE69DB00556B20 /* Icon-Small.png */; };
 		5D1DA99712DE69DB00556B20 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DA99412DE69DB00556B20 /* Icon-Small@2x.png */; };
 		5D1DA9BB12DE6C5500556B20 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DA9BA12DE6C5500556B20 /* Default.png */; };
+		5D1DA9ED12DE7BF300556B20 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DA9EB12DE7BF300556B20 /* footer.png */; };
+		5D1DA9EE12DE7BF300556B20 /* footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DA9EC12DE7BF300556B20 /* footer@2x.png */; };
+		5D1DAA0912DE852700556B20 /* footerArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DAA0712DE852700556B20 /* footerArrow.png */; };
+		5D1DAA0A12DE852700556B20 /* footerArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1DAA0812DE852700556B20 /* footerArrow@2x.png */; };
 		5D55A61412BA9845004AE0EB /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A61312BA9845004AE0EB /* RootNavigationController.m */; };
-		5D55A61712BA9BB1004AE0EB /* PlacesNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A61612BA9BB1004AE0EB /* PlacesNavigationController.m */; };
 		5D55A6A012BAD92C004AE0EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A69F12BAD92C004AE0EB /* CoreLocation.framework */; };
 		5D55A6C912BAD993004AE0EB /* CLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A6C812BAD993004AE0EB /* CLController.m */; };
 		5D55A7C712BB2640004AE0EB /* YAJL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A7B912BB2640004AE0EB /* YAJL.framework */; };
@@ -81,10 +84,12 @@
 		5D1DA99312DE69DB00556B20 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Assets/Icon-Small.png"; sourceTree = "<group>"; };
 		5D1DA99412DE69DB00556B20 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Assets/Icon-Small@2x.png"; sourceTree = "<group>"; };
 		5D1DA9BA12DE6C5500556B20 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Assets/Default.png; sourceTree = "<group>"; };
+		5D1DA9EB12DE7BF300556B20 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = footer.png; path = Assets/footer.png; sourceTree = "<group>"; };
+		5D1DA9EC12DE7BF300556B20 /* footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "footer@2x.png"; path = "Assets/footer@2x.png"; sourceTree = "<group>"; };
+		5D1DAA0712DE852700556B20 /* footerArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = footerArrow.png; path = Assets/footerArrow.png; sourceTree = "<group>"; };
+		5D1DAA0812DE852700556B20 /* footerArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "footerArrow@2x.png"; path = "Assets/footerArrow@2x.png"; sourceTree = "<group>"; };
 		5D55A61212BA9845004AE0EB /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		5D55A61312BA9845004AE0EB /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
-		5D55A61512BA9BB1004AE0EB /* PlacesNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesNavigationController.h; sourceTree = "<group>"; };
-		5D55A61612BA9BB1004AE0EB /* PlacesNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesNavigationController.m; sourceTree = "<group>"; };
 		5D55A69F12BAD92C004AE0EB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5D55A6C712BAD993004AE0EB /* CLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLController.h; sourceTree = "<group>"; };
 		5D55A6C812BAD993004AE0EB /* CLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLController.m; sourceTree = "<group>"; };
@@ -170,8 +175,6 @@
 				5DAF7FBE12B081220015D272 /* PlacesListViewController.m */,
 				5D55A61212BA9845004AE0EB /* RootNavigationController.h */,
 				5D55A61312BA9845004AE0EB /* RootNavigationController.m */,
-				5D55A61512BA9BB1004AE0EB /* PlacesNavigationController.h */,
-				5D55A61612BA9BB1004AE0EB /* PlacesNavigationController.m */,
 				5D55A6C712BAD993004AE0EB /* CLController.h */,
 				5D55A6C812BAD993004AE0EB /* CLController.m */,
 				5D55A8A212BC310D004AE0EB /* SGController.h */,
@@ -279,6 +282,10 @@
 				5DF1006912D5356B0097CF47 /* buttonSearch@2x.png */,
 				5DF1007812D53AE30097CF47 /* buttonSearchDown.png */,
 				5DF1006A12D5356B0097CF47 /* buttonSearchDown@2x.png */,
+				5D1DA9EB12DE7BF300556B20 /* footer.png */,
+				5D1DA9EC12DE7BF300556B20 /* footer@2x.png */,
+				5D1DAA0712DE852700556B20 /* footerArrow.png */,
+				5D1DAA0812DE852700556B20 /* footerArrow@2x.png */,
 				5DF1008312D53B0E0097CF47 /* header.png */,
 				5DF1006512D5352B0097CF47 /* header@2x.png */,
 				5DF100A312D544D40097CF47 /* listActive.png */,
@@ -375,6 +382,10 @@
 				5D1DA99612DE69DB00556B20 /* Icon-Small.png in Resources */,
 				5D1DA99712DE69DB00556B20 /* Icon-Small@2x.png in Resources */,
 				5D1DA9BB12DE6C5500556B20 /* Default.png in Resources */,
+				5D1DA9ED12DE7BF300556B20 /* footer.png in Resources */,
+				5D1DA9EE12DE7BF300556B20 /* footer@2x.png in Resources */,
+				5D1DAA0912DE852700556B20 /* footerArrow.png in Resources */,
+				5D1DAA0A12DE852700556B20 /* footerArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +402,6 @@
 				5DAF7FBF12B081220015D272 /* PlacesListViewController.m in Sources */,
 				5DAF7FC212B0814C0015D272 /* PlacesMapViewController.m in Sources */,
 				5D55A61412BA9845004AE0EB /* RootNavigationController.m in Sources */,
-				5D55A61712BA9BB1004AE0EB /* PlacesNavigationController.m in Sources */,
 				5D55A6C912BAD993004AE0EB /* CLController.m in Sources */,
 				5D55A8A412BC310D004AE0EB /* SGController.m in Sources */,
 				5D1DA94412DE466700556B20 /* AbstractPlacesViewController.m in Sources */,

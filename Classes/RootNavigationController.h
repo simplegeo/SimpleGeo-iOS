@@ -28,14 +28,27 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
+#import "ContextViewController.h"
+#import "PlacesMapViewController.h"
+#import "PlacesListViewController.h"
+
 
 @interface RootNavigationController : UINavigationController
 {
-    UITabBarController *tabBarController;
+    ContextViewController *contextController;
+    PlacesMapViewController *placesMapController;
+    PlacesListViewController *placesListController;
+    AbstractPlacesViewController *activePlacesController;
 }
 
-@property (nonatomic,retain) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic,assign) IBOutlet ContextViewController *contextController;
+@property (nonatomic,assign) IBOutlet PlacesMapViewController *placesMapController;
+@property (nonatomic,assign) IBOutlet PlacesListViewController *placesListController;
+@property (nonatomic,assign) IBOutlet AbstractPlacesViewController *activePlacesController;
 
-- (IBAction)start:(id)sender;
+- (IBAction)displayContext:(id)sender;
+- (IBAction)displayPlaces:(id)sender;
+- (IBAction)displayPlacesMap:(id)sender;
+- (IBAction)displayPlacesList:(id)sender;
 
 @end
