@@ -43,7 +43,9 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self loadContextForCurrentLocation:self];
+    if (! contextData) {
+        [self loadContextForCurrentLocation:self];
+    }
 }
 
 - (void)dealloc

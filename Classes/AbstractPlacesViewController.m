@@ -40,7 +40,9 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self loadPlacesForCurrentLocation:nil];
+    if (! placeData) {
+        [self loadPlacesForCurrentLocation:nil];
+    }
 }
 
 - (void)dealloc
