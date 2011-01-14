@@ -34,6 +34,7 @@
 		5D55A83A12BC0341004AE0EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A83912BC0341004AE0EB /* SystemConfiguration.framework */; };
 		5D55A83C12BC034A004AE0EB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A83B12BC034A004AE0EB /* MobileCoreServices.framework */; };
 		5D55A8A412BC310D004AE0EB /* SGController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A8A312BC310D004AE0EB /* SGController.m */; };
+		5D72908E12E0BEDF00DCA295 /* Private.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5D72908D12E0BEDF00DCA295 /* Private.xcconfig */; };
 		5DAF7F7C12B06F5F0015D272 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAF7F7B12B06F5F0015D272 /* MapKit.framework */; };
 		5DAF7F9B12B070B20015D272 /* ContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7F9A12B070B20015D272 /* ContextViewController.m */; };
 		5DAF7FBF12B081220015D272 /* PlacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7FBE12B081220015D272 /* PlacesListViewController.m */; };
@@ -102,6 +103,7 @@
 		5D55A83B12BC034A004AE0EB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5D55A8A212BC310D004AE0EB /* SGController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGController.h; sourceTree = "<group>"; };
 		5D55A8A312BC310D004AE0EB /* SGController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGController.m; sourceTree = "<group>"; };
+		5D72908D12E0BEDF00DCA295 /* Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Private.xcconfig; sourceTree = "<group>"; };
 		5DAF7F7B12B06F5F0015D272 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5DAF7F9912B070B20015D272 /* ContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextViewController.h; sourceTree = "<group>"; };
 		5DAF7F9A12B070B20015D272 /* ContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextViewController.m; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				5D72906D12E0BCFE00DCA295 /* Build Configuration */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -252,6 +255,14 @@
 				5D55A7B912BB2640004AE0EB /* YAJL.framework */,
 			);
 			path = ext;
+			sourceTree = "<group>";
+		};
+		5D72906D12E0BCFE00DCA295 /* Build Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				5D72908D12E0BEDF00DCA295 /* Private.xcconfig */,
+			);
+			name = "Build Configuration";
 			sourceTree = "<group>";
 		};
 		5DF100FF12D57C550097CF47 /* Icons */ = {
@@ -390,6 +401,7 @@
 				5D1DAA0912DE852700556B20 /* footerArrow.png in Resources */,
 				5D1DAA0A12DE852700556B20 /* footerArrow@2x.png in Resources */,
 				5D1DAA8412DF8AA500556B20 /* Default@2x.png in Resources */,
+				5D72908E12E0BEDF00DCA295 /* Private.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +429,7 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D72908D12E0BEDF00DCA295 /* Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
@@ -441,6 +454,7 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D72908D12E0BEDF00DCA295 /* Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
@@ -478,6 +492,7 @@
 		};
 		5DF653E312D7C57500664279 /* Ad-Hoc Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D72908D12E0BEDF00DCA295 /* Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;

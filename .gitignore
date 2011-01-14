@@ -27,3 +27,4 @@ Icon?
 
 # Project-specific ignores
 docs/
+Private.xcconfig

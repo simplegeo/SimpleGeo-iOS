@@ -1,0 +1,7 @@
+//
+//  User-specific (private) settings
+//
+
+// you can get your OAuth credentials from http://simplegeo.com/tokens/
+CONSUMER_KEY = <SimpleGeo OAuth consumer key>
+CONSUMER_SECRET = <SimpleGeo OAuth consumer secret>

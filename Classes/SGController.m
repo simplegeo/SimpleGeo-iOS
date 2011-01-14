@@ -42,9 +42,8 @@
     if (self) {
         // default to using this as the delegate for potentially helpful error logging
         client = [[SimpleGeo clientWithDelegate:self
-                                       consumerKey:@"consumerKey"
-                                    consumerSecret:@"consumerSecret"
-                                               URL:[NSURL URLWithString:@"http://localhost:4567"]] retain];
+                                     consumerKey:[infoDictionary objectForKey:@"CONSUMER_KEY"]
+                                  consumerSecret:[infoDictionary objectForKey:@"CONSUMER_SECRET"]] retain];
     }
 
     return self;

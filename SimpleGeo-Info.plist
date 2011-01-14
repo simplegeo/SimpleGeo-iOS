@@ -24,5 +24,9 @@
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
+	<key>CONSUMER_KEY</key>
+	<string>${CONSUMER_KEY}</string>
+	<key>CONSUMER_SECRET</key>
+	<string>${CONSUMER_SECRET}</string>
 </dict>
 </plist>
