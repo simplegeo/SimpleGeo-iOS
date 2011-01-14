@@ -40,6 +40,8 @@
     self = [super init];
 
     if (self) {
+        NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+
         // default to using this as the delegate for potentially helpful error logging
         client = [[SimpleGeo clientWithDelegate:self
                                      consumerKey:[infoDictionary objectForKey:@"CONSUMER_KEY"]
