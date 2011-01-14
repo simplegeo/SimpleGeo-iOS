@@ -35,6 +35,10 @@
 		5D55A83C12BC034A004AE0EB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D55A83B12BC034A004AE0EB /* MobileCoreServices.framework */; };
 		5D55A8A412BC310D004AE0EB /* SGController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55A8A312BC310D004AE0EB /* SGController.m */; };
 		5D72908E12E0BEDF00DCA295 /* Private.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5D72908D12E0BEDF00DCA295 /* Private.xcconfig */; };
+		5D7290A612E0C38700DCA295 /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5D7290A512E0C38700DCA295 /* Shared.xcconfig */; };
+		5D7290AD12E0C47F00DCA295 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5D7290AC12E0C47F00DCA295 /* Debug.xcconfig */; };
+		5D7290AF12E0C4B600DCA295 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5D7290AE12E0C4B600DCA295 /* Release.xcconfig */; };
+		5D7290B112E0C53000DCA295 /* Distribution.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5D7290B012E0C53000DCA295 /* Distribution.xcconfig */; };
 		5DAF7F7C12B06F5F0015D272 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAF7F7B12B06F5F0015D272 /* MapKit.framework */; };
 		5DAF7F9B12B070B20015D272 /* ContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7F9A12B070B20015D272 /* ContextViewController.m */; };
 		5DAF7FBF12B081220015D272 /* PlacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF7FBE12B081220015D272 /* PlacesListViewController.m */; };
@@ -104,6 +108,10 @@
 		5D55A8A212BC310D004AE0EB /* SGController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGController.h; sourceTree = "<group>"; };
 		5D55A8A312BC310D004AE0EB /* SGController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGController.m; sourceTree = "<group>"; };
 		5D72908D12E0BEDF00DCA295 /* Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Private.xcconfig; sourceTree = "<group>"; };
+		5D7290A512E0C38700DCA295 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		5D7290AC12E0C47F00DCA295 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		5D7290AE12E0C4B600DCA295 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		5D7290B012E0C53000DCA295 /* Distribution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Distribution.xcconfig; sourceTree = "<group>"; };
 		5DAF7F7B12B06F5F0015D272 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5DAF7F9912B070B20015D272 /* ContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextViewController.h; sourceTree = "<group>"; };
 		5DAF7F9A12B070B20015D272 /* ContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextViewController.m; sourceTree = "<group>"; };
@@ -260,7 +268,11 @@
 		5D72906D12E0BCFE00DCA295 /* Build Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				5D7290AC12E0C47F00DCA295 /* Debug.xcconfig */,
+				5D7290B012E0C53000DCA295 /* Distribution.xcconfig */,
 				5D72908D12E0BEDF00DCA295 /* Private.xcconfig */,
+				5D7290AE12E0C4B600DCA295 /* Release.xcconfig */,
+				5D7290A512E0C38700DCA295 /* Shared.xcconfig */,
 			);
 			name = "Build Configuration";
 			sourceTree = "<group>";
@@ -402,6 +414,10 @@
 				5D1DAA0A12DE852700556B20 /* footerArrow@2x.png in Resources */,
 				5D1DAA8412DF8AA500556B20 /* Default@2x.png in Resources */,
 				5D72908E12E0BEDF00DCA295 /* Private.xcconfig in Resources */,
+				5D7290A612E0C38700DCA295 /* Shared.xcconfig in Resources */,
+				5D7290AD12E0C47F00DCA295 /* Debug.xcconfig in Resources */,
+				5D7290AF12E0C4B600DCA295 /* Release.xcconfig in Resources */,
+				5D7290B112E0C53000DCA295 /* Distribution.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,54 +445,19 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D72908D12E0BEDF00DCA295 /* Private.xcconfig */;
+			baseConfigurationReference = 5D7290AC12E0C47F00DCA295 /* Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/ext\"",
-				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = SimpleGeo_Prefix.pch;
-				INFOPLIST_FILE = "SimpleGeo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = SimpleGeo;
 			};
 			name = Debug;
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D72908D12E0BEDF00DCA295 /* Private.xcconfig */;
+			baseConfigurationReference = 5D7290AE12E0C4B600DCA295 /* Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/ext\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = SimpleGeo_Prefix.pch;
-				INFOPLIST_FILE = "SimpleGeo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = SimpleGeo;
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		5DF653E212D7C57500664279 /* Ad-Hoc Distribution */ = {
+		5DF653E212D7C57500664279 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -488,33 +469,14 @@
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
-			name = "Ad-Hoc Distribution";
+			name = Distribution;
 		};
-		5DF653E312D7C57500664279 /* Ad-Hoc Distribution */ = {
+		5DF653E312D7C57500664279 /* Distribution */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D72908D12E0BEDF00DCA295 /* Private.xcconfig */;
+			baseConfigurationReference = 5D7290B012E0C53000DCA295 /* Distribution.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: SimpleGeo, Inc.";
-				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/ext\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = SimpleGeo_Prefix.pch;
-				INFOPLIST_FILE = "SimpleGeo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = SimpleGeo;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "44DE45E2-D853-4CC3-A035-16F6774F6AA9";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = "Ad-Hoc Distribution";
+			name = Distribution;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -551,7 +513,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
-				5DF653E312D7C57500664279 /* Ad-Hoc Distribution */,
+				5DF653E312D7C57500664279 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -561,7 +523,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
-				5DF653E212D7C57500664279 /* Ad-Hoc Distribution */,
+				5DF653E212D7C57500664279 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
