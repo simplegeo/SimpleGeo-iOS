@@ -7,5 +7,5 @@
 
 VALIDATE_PRODUCT = YES
 CODE_SIGN_IDENTITY =
-CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Distribution: SimpleGeo, Inc.
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Distribution
 COPY_PHASE_STRIP = YES
