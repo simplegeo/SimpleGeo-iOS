@@ -45,6 +45,12 @@
     [self.mapView setRegion:region];
 }
 
+- (void)dealloc
+{
+    mapView.delegate = nil;
+    [super dealloc];
+}
+
 #pragma mark SimpleGeoDelegate methods
 
 - (void)didLoadPlaces:(SGFeatureCollection *)places
