@@ -8,7 +8,7 @@ Places](http://simplegeo.com/products/places/).
 
 1. Check out the source code:
 
-    $ git clone git://github.com/simplegeo/SimpleGeo.framework.git
+    $ git clone git://github.com/simplegeo/SimpleGeo-iPhone.git
 
 2. Initialize submodules:
 
