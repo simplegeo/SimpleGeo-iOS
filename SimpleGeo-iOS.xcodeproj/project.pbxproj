@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		941B90FA13EA6E16004FDA38 /* context.png in Resources */ = {isa = PBXBuildFile; fileRef = 941B90F413EA6E16004FDA38 /* context.png */; };
+		941B90FB13EA6E16004FDA38 /* context@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 941B90F513EA6E16004FDA38 /* context@2x.png */; };
+		941B90FC13EA6E16004FDA38 /* places.png in Resources */ = {isa = PBXBuildFile; fileRef = 941B90F613EA6E16004FDA38 /* places.png */; };
+		941B90FD13EA6E16004FDA38 /* places@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 941B90F713EA6E16004FDA38 /* places@2x.png */; };
+		941B90FE13EA6E16004FDA38 /* storage.png in Resources */ = {isa = PBXBuildFile; fileRef = 941B90F813EA6E16004FDA38 /* storage.png */; };
+		941B90FF13EA6E16004FDA38 /* storage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 941B90F913EA6E16004FDA38 /* storage@2x.png */; };
+		941B910913EA6FD7004FDA38 /* SimpleGeo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B910813EA6FD7004FDA38 /* SimpleGeo.framework */; };
+		9446D0A613E083280079DDFE /* PolygonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9446D0A413E083280079DDFE /* PolygonViewController.m */; };
+		9446D0A713E083280079DDFE /* PolygonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9446D0A513E083280079DDFE /* PolygonView.xib */; };
+		94702E8F13E06E16007042B2 /* PlacesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94702E8C13E06E15007042B2 /* PlacesView.xib */; };
+		94702E9013E06E16007042B2 /* PlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94702E8E13E06E15007042B2 /* PlacesViewController.m */; };
+		94702E9913E070E6007042B2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94702E9513E070E6007042B2 /* MainWindow.xib */; };
+		94702E9E13E0716B007042B2 /* StorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94702E9C13E0716A007042B2 /* StorageViewController.m */; };
+		94702E9F13E0716B007042B2 /* StorageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94702E9D13E0716B007042B2 /* StorageView.xib */; };
+		94709425137B3C0400F23767 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94709424137B3C0400F23767 /* UIKit.framework */; };
+		94709427137B3C0400F23767 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94709426137B3C0400F23767 /* Foundation.framework */; };
+		94709429137B3C0400F23767 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94709428137B3C0400F23767 /* CoreGraphics.framework */; };
+		94984F6A13E3ACB000988FA3 /* apple-touch-icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 94984F6713E3ACB000988FA3 /* apple-touch-icon-114.png */; };
+		94984F6B13E3ACB000988FA3 /* apple-touch-icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 94984F6813E3ACB000988FA3 /* apple-touch-icon-57.png */; };
+		94984F6C13E3ACB000988FA3 /* apple-touch-icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 94984F6913E3ACB000988FA3 /* apple-touch-icon-72.png */; };
+		94984F7A13E3AE1000988FA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94984F7913E3AE1000988FA3 /* main.m */; };
+		949F8A9C13E3ABC70002E031 /* SimpleGeoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 949F8A9B13E3ABC70002E031 /* SimpleGeoAppDelegate.m */; };
+		949F8AA113E3ABCF0002E031 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949F8A9E13E3ABCF0002E031 /* LocationController.m */; };
+		949F8AA213E3ABCF0002E031 /* SGController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949F8AA013E3ABCF0002E031 /* SGController.m */; };
+		94B26B34137B928C00E3E825 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B26B33137B928C00E3E825 /* MapKit.framework */; };
+		94E6CA8213DBEEC2003743B2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E6CA8113DBEEC2003743B2 /* libz.dylib */; };
+		94E8FAD2137C526A00E6463D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E8FAD1137C526900E6463D /* CoreLocation.framework */; };
+		94E8FADC137C548000E6463D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E8FADB137C548000E6463D /* MobileCoreServices.framework */; };
+		94E8FAE0137C549800E6463D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E8FADF137C549800E6463D /* CFNetwork.framework */; };
+		94E8FAE2137C549D00E6463D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E8FAE1137C549D00E6463D /* SystemConfiguration.framework */; };
+		94F12F4713E0873D00AA2F5C /* ContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F12F4513E0873D00AA2F5C /* ContextViewController.m */; };
+		94F12F4813E0873D00AA2F5C /* ContextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F12F4613E0873D00AA2F5C /* ContextView.xib */; };
+		94F12F4B13E0890800AA2F5C /* SGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F12F4A13E0890800AA2F5C /* SGViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		941B90F413EA6E16004FDA38 /* context.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = context.png; sourceTree = "<group>"; };
+		941B90F513EA6E16004FDA38 /* context@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "context@2x.png"; sourceTree = "<group>"; };
+		941B90F613EA6E16004FDA38 /* places.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = places.png; sourceTree = "<group>"; };
+		941B90F713EA6E16004FDA38 /* places@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "places@2x.png"; sourceTree = "<group>"; };
+		941B90F813EA6E16004FDA38 /* storage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = storage.png; sourceTree = "<group>"; };
+		941B90F913EA6E16004FDA38 /* storage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "storage@2x.png"; sourceTree = "<group>"; };
+		941B910813EA6FD7004FDA38 /* SimpleGeo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleGeo.framework; path = Resources/SimpleGeo.framework; sourceTree = "<group>"; };
+		9446D0A313E083280079DDFE /* PolygonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PolygonViewController.h; path = Classes/Context/PolygonViewController.h; sourceTree = SOURCE_ROOT; };
+		9446D0A413E083280079DDFE /* PolygonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PolygonViewController.m; path = Classes/Context/PolygonViewController.m; sourceTree = SOURCE_ROOT; };
+		9446D0A513E083280079DDFE /* PolygonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PolygonView.xib; path = Classes/Context/PolygonView.xib; sourceTree = SOURCE_ROOT; };
+		94702E8C13E06E15007042B2 /* PlacesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlacesView.xib; path = Classes/Places/PlacesView.xib; sourceTree = SOURCE_ROOT; };
+		94702E8D13E06E15007042B2 /* PlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesViewController.h; path = Classes/Places/PlacesViewController.h; sourceTree = SOURCE_ROOT; };
+		94702E8E13E06E15007042B2 /* PlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesViewController.m; path = Classes/Places/PlacesViewController.m; sourceTree = SOURCE_ROOT; };
+		94702E9513E070E6007042B2 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = Classes/Base/MainWindow.xib; sourceTree = SOURCE_ROOT; };
+		94702E9B13E0716A007042B2 /* StorageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StorageViewController.h; path = Classes/Storage/StorageViewController.h; sourceTree = SOURCE_ROOT; };
+		94702E9C13E0716A007042B2 /* StorageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StorageViewController.m; path = Classes/Storage/StorageViewController.m; sourceTree = SOURCE_ROOT; };
+		94702E9D13E0716B007042B2 /* StorageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StorageView.xib; path = Classes/Storage/StorageView.xib; sourceTree = SOURCE_ROOT; };
+		94709420137B3C0400F23767 /* SimpleGeo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleGeo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94709424137B3C0400F23767 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		94709426137B3C0400F23767 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		94709428137B3C0400F23767 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		94984F6713E3ACB000988FA3 /* apple-touch-icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-114.png"; sourceTree = "<group>"; };
+		94984F6813E3ACB000988FA3 /* apple-touch-icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-57.png"; sourceTree = "<group>"; };
+		94984F6913E3ACB000988FA3 /* apple-touch-icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-72.png"; sourceTree = "<group>"; };
+		94984F7413E3AD1700988FA3 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		94984F7513E3AD1700988FA3 /* SimpleGeo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SimpleGeo-Info.plist"; path = "Resources/SimpleGeo-Info.plist"; sourceTree = SOURCE_ROOT; };
+		94984F7613E3AD1700988FA3 /* SimpleGeo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SimpleGeo-Prefix.pch"; path = "Resources/SimpleGeo-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		94984F7913E3AE1000988FA3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Classes/Base/main.m; sourceTree = SOURCE_ROOT; };
+		949F8A9A13E3ABC70002E031 /* SimpleGeoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleGeoAppDelegate.h; path = Classes/Base/SimpleGeoAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		949F8A9B13E3ABC70002E031 /* SimpleGeoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleGeoAppDelegate.m; path = Classes/Base/SimpleGeoAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		949F8A9D13E3ABCF0002E031 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationController.h; path = Classes/Base/LocationController.h; sourceTree = SOURCE_ROOT; };
+		949F8A9E13E3ABCF0002E031 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationController.m; path = Classes/Base/LocationController.m; sourceTree = SOURCE_ROOT; };
+		949F8A9F13E3ABCF0002E031 /* SGController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SGController.h; path = Classes/Base/SGController.h; sourceTree = SOURCE_ROOT; };
+		949F8AA013E3ABCF0002E031 /* SGController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SGController.m; path = Classes/Base/SGController.m; sourceTree = SOURCE_ROOT; };
+		94B26B33137B928C00E3E825 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		94CC6FBD13E3B3EB00D9249C /* Credentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Credentials.h; path = Resources/Credentials.h; sourceTree = SOURCE_ROOT; };
+		94E6CA8113DBEEC2003743B2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		94E8FAD1137C526900E6463D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		94E8FADB137C548000E6463D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		94E8FADF137C549800E6463D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		94E8FAE1137C549D00E6463D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		94F12F4413E0873D00AA2F5C /* ContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContextViewController.h; path = Classes/Context/ContextViewController.h; sourceTree = SOURCE_ROOT; };
+		94F12F4513E0873D00AA2F5C /* ContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContextViewController.m; path = Classes/Context/ContextViewController.m; sourceTree = SOURCE_ROOT; };
+		94F12F4613E0873D00AA2F5C /* ContextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContextView.xib; path = Classes/Context/ContextView.xib; sourceTree = SOURCE_ROOT; };
+		94F12F4913E0890800AA2F5C /* SGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SGViewController.h; path = Classes/Shared/SGViewController.h; sourceTree = SOURCE_ROOT; };
+		94F12F4A13E0890800AA2F5C /* SGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SGViewController.m; path = Classes/Shared/SGViewController.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9470941D137B3C0400F23767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E6CA8213DBEEC2003743B2 /* libz.dylib in Frameworks */,
+				94E8FAE2137C549D00E6463D /* SystemConfiguration.framework in Frameworks */,
+				94E8FAE0137C549800E6463D /* CFNetwork.framework in Frameworks */,
+				94E8FADC137C548000E6463D /* MobileCoreServices.framework in Frameworks */,
+				94E8FAD2137C526A00E6463D /* CoreLocation.framework in Frameworks */,
+				94B26B34137B928C00E3E825 /* MapKit.framework in Frameworks */,
+				94709425137B3C0400F23767 /* UIKit.framework in Frameworks */,
+				94709427137B3C0400F23767 /* Foundation.framework in Frameworks */,
+				94709429137B3C0400F23767 /* CoreGraphics.framework in Frameworks */,
+				941B910913EA6FD7004FDA38 /* SimpleGeo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9446D0A213E081FB0079DDFE /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				94F12F4413E0873D00AA2F5C /* ContextViewController.h */,
+				94F12F4513E0873D00AA2F5C /* ContextViewController.m */,
+				94F12F4613E0873D00AA2F5C /* ContextView.xib */,
+				9446D0A313E083280079DDFE /* PolygonViewController.h */,
+				9446D0A413E083280079DDFE /* PolygonViewController.m */,
+				9446D0A513E083280079DDFE /* PolygonView.xib */,
+			);
+			name = Context;
+			sourceTree = "<group>";
+		};
+		94702E8213DF9684007042B2 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				94702E9B13E0716A007042B2 /* StorageViewController.h */,
+				94702E9C13E0716A007042B2 /* StorageViewController.m */,
+				94702E9D13E0716B007042B2 /* StorageView.xib */,
+			);
+			name = Storage;
+			sourceTree = "<group>";
+		};
+		94709415137B3C0400F23767 = {
+			isa = PBXGroup;
+			children = (
+				94984F6613E3ACB000988FA3 /* Images */,
+				9470942A137B3C0400F23767 /* SimpleGeo */,
+				94709421137B3C0400F23767 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94709421137B3C0400F23767 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94709420137B3C0400F23767 /* SimpleGeo-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94709423137B3C0400F23767 /* External Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				941B910813EA6FD7004FDA38 /* SimpleGeo.framework */,
+			);
+			name = "External Frameworks";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9470942A137B3C0400F23767 /* SimpleGeo */ = {
+			isa = PBXGroup;
+			children = (
+				94F9BD8013DBEA55006DA6E8 /* Base */,
+				94F12F4C13E08A4900AA2F5C /* Shared */,
+				9446D0A213E081FB0079DDFE /* Context */,
+				94B68622138AD33900A5C231 /* Places */,
+				94702E8213DF9684007042B2 /* Storage */,
+				9470942B137B3C0400F23767 /* Supporting Files */,
+			);
+			path = SimpleGeo;
+			sourceTree = "<group>";
+		};
+		9470942B137B3C0400F23767 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94984F7913E3AE1000988FA3 /* main.m */,
+				94CC6FBD13E3B3EB00D9249C /* Credentials.h */,
+				94984F7413E3AD1700988FA3 /* InfoPlist.strings */,
+				94984F7513E3AD1700988FA3 /* SimpleGeo-Info.plist */,
+				94984F7613E3AD1700988FA3 /* SimpleGeo-Prefix.pch */,
+				94709423137B3C0400F23767 /* External Frameworks */,
+				94F9BD7F13DBEA05006DA6E8 /* Linked Frameworks */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94984F6613E3ACB000988FA3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				941B90F413EA6E16004FDA38 /* context.png */,
+				941B90F513EA6E16004FDA38 /* context@2x.png */,
+				941B90F613EA6E16004FDA38 /* places.png */,
+				941B90F713EA6E16004FDA38 /* places@2x.png */,
+				941B90F813EA6E16004FDA38 /* storage.png */,
+				941B90F913EA6E16004FDA38 /* storage@2x.png */,
+				94984F6713E3ACB000988FA3 /* apple-touch-icon-114.png */,
+				94984F6813E3ACB000988FA3 /* apple-touch-icon-57.png */,
+				94984F6913E3ACB000988FA3 /* apple-touch-icon-72.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		94B68622138AD33900A5C231 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				94702E8D13E06E15007042B2 /* PlacesViewController.h */,
+				94702E8E13E06E15007042B2 /* PlacesViewController.m */,
+				94702E8C13E06E15007042B2 /* PlacesView.xib */,
+			);
+			name = Places;
+			sourceTree = "<group>";
+		};
+		94F12F4C13E08A4900AA2F5C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				94F12F4913E0890800AA2F5C /* SGViewController.h */,
+				94F12F4A13E0890800AA2F5C /* SGViewController.m */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		94F9BD7F13DBEA05006DA6E8 /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94E6CA8113DBEEC2003743B2 /* libz.dylib */,
+				94E8FAE1137C549D00E6463D /* SystemConfiguration.framework */,
+				94E8FADF137C549800E6463D /* CFNetwork.framework */,
+				94E8FADB137C548000E6463D /* MobileCoreServices.framework */,
+				94E8FAD1137C526900E6463D /* CoreLocation.framework */,
+				94B26B33137B928C00E3E825 /* MapKit.framework */,
+				94709424137B3C0400F23767 /* UIKit.framework */,
+				94709426137B3C0400F23767 /* Foundation.framework */,
+				94709428137B3C0400F23767 /* CoreGraphics.framework */,
+			);
+			name = "Linked Frameworks";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		94F9BD8013DBEA55006DA6E8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				94702E9513E070E6007042B2 /* MainWindow.xib */,
+				949F8A9A13E3ABC70002E031 /* SimpleGeoAppDelegate.h */,
+				949F8A9B13E3ABC70002E031 /* SimpleGeoAppDelegate.m */,
+				949F8A9D13E3ABCF0002E031 /* LocationController.h */,
+				949F8A9E13E3ABCF0002E031 /* LocationController.m */,
+				949F8A9F13E3ABCF0002E031 /* SGController.h */,
+				949F8AA013E3ABCF0002E031 /* SGController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9470941F137B3C0400F23767 /* SimpleGeo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9470945D137B3C0400F23767 /* Build configuration list for PBXNativeTarget "SimpleGeo-iOS" */;
+			buildPhases = (
+				9470941C137B3C0400F23767 /* Sources */,
+				9470941D137B3C0400F23767 /* Frameworks */,
+				9470941E137B3C0400F23767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleGeo-iOS";
+			productName = SimpleGeo;
+			productReference = 94709420137B3C0400F23767 /* SimpleGeo-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94709417137B3C0400F23767 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9470941A137B3C0400F23767 /* Build configuration list for PBXProject "SimpleGeo-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 94709415137B3C0400F23767;
+			productRefGroup = 94709421137B3C0400F23767 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9470941F137B3C0400F23767 /* SimpleGeo-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9470941E137B3C0400F23767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94702E8F13E06E16007042B2 /* PlacesView.xib in Resources */,
+				94702E9913E070E6007042B2 /* MainWindow.xib in Resources */,
+				94702E9F13E0716B007042B2 /* StorageView.xib in Resources */,
+				9446D0A713E083280079DDFE /* PolygonView.xib in Resources */,
+				94F12F4813E0873D00AA2F5C /* ContextView.xib in Resources */,
+				94984F6A13E3ACB000988FA3 /* apple-touch-icon-114.png in Resources */,
+				94984F6B13E3ACB000988FA3 /* apple-touch-icon-57.png in Resources */,
+				94984F6C13E3ACB000988FA3 /* apple-touch-icon-72.png in Resources */,
+				941B90FA13EA6E16004FDA38 /* context.png in Resources */,
+				941B90FB13EA6E16004FDA38 /* context@2x.png in Resources */,
+				941B90FC13EA6E16004FDA38 /* places.png in Resources */,
+				941B90FD13EA6E16004FDA38 /* places@2x.png in Resources */,
+				941B90FE13EA6E16004FDA38 /* storage.png in Resources */,
+				941B90FF13EA6E16004FDA38 /* storage@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9470941C137B3C0400F23767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94702E9013E06E16007042B2 /* PlacesViewController.m in Sources */,
+				94702E9E13E0716B007042B2 /* StorageViewController.m in Sources */,
+				9446D0A613E083280079DDFE /* PolygonViewController.m in Sources */,
+				94F12F4713E0873D00AA2F5C /* ContextViewController.m in Sources */,
+				94F12F4B13E0890800AA2F5C /* SGViewController.m in Sources */,
+				949F8A9C13E3ABC70002E031 /* SimpleGeoAppDelegate.m in Sources */,
+				949F8AA113E3ABCF0002E031 /* LocationController.m in Sources */,
+				949F8AA213E3ABCF0002E031 /* SGController.m in Sources */,
+				94984F7A13E3AE1000988FA3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9470945B137B3C0400F23767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = SimpleGeo;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9470945C137B3C0400F23767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = SimpleGeo;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		9470945E137B3C0400F23767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Resources\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Resources/SimpleGeo-Prefix.pch";
+				INFOPLIST_FILE = "Resources/SimpleGeo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9470945F137B3C0400F23767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: SimpleGeo, Inc.";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Resources\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Resources/SimpleGeo-Prefix.pch";
+				INFOPLIST_FILE = "Resources/SimpleGeo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "665F57F5-E0CC-42B8-9BC8-A30D47E4EC02";
+				SDKROOT = iphoneos4.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9470941A137B3C0400F23767 /* Build configuration list for PBXProject "SimpleGeo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9470945B137B3C0400F23767 /* Debug */,
+				9470945C137B3C0400F23767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9470945D137B3C0400F23767 /* Build configuration list for PBXNativeTarget "SimpleGeo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9470945E137B3C0400F23767 /* Debug */,
+				9470945F137B3C0400F23767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94709417137B3C0400F23767 /* Project object */;
+}

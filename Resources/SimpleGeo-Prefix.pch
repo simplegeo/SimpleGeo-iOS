@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'SimpleGeo' target in the 'SimpleGeo' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <SimpleGeo/SimpleGeo.h>
+#endif
+
+#define SGDefaultRegion MKCoordinateRegionMake(CLLocationCoordinate2DMake(37.579413, -97.294922), MKCoordinateSpanMake(20.0, 20.0))
+#define SGDefaultSpan MKCoordinateSpanMake(0.01, 0.01)
+#define SGMapDelta 0.001

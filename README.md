@@ -1,21 +1,15 @@
-# SimpleGeo demo app
+# SimpleGeo on iOS
 
-This is a sample iOS app that demonstrates [SimpleGeo
-Context](http://simplegeo.com/products/context/) and [SimpleGeo
-Places](http://simplegeo.com/products/places/).
+**This is SimpleGeo's sample iOS application.**
 
-## Building
+This app demonstrates how to integrate [`SimpleGeo.framework`](https://github.com/simplegeo/simplegeo.framework) into an iOS project. The app uses the framework to make API requests to SimpleGeo [Context,](https://simplegeo.com/products/context/) [Places,](https://simplegeo.com/products/places/) and [Storage.](https://simplegeo.com/products/storage/)
 
-1. Check out the source code:
+[`SimpleGeo-iOS`] uses MapKit to show SimpleGeo Places and SimpleGeo Storage Records on a map. The app allows you to view SimpleGeo Context, browse and search SimpleGeo Places, and explore a SimpleGeo Storage layer from your iPhone, iPad, or iPod Touch.
 
-    $ git clone git://github.com/simplegeo/SimpleGeo-iPhone.git
+## Getting Started
 
-2. Initialize submodules:
+1. Download [`SimpleGeo.framework`](https://github.com/simplegeo/simplegeo.framework) and drag it into the Resources/ subdirectory.
 
-    $ git submodule update --init
+2. Rename `Resources/Credentials_template.h` to `Credentials.h` and provide your SimpleGeo OAuth key and secret.
 
-3. Copy `Private.xcconfig.dist` to `Private.xcconfig` and add your [SimpleGeo
-OAuth credentials](http://simplegeo.com/tokens/).
-4. Open up the project in Xcode.
-5. ????
-6. Profit.
+3. Start coding!

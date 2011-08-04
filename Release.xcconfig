@@ -1,9 +1,0 @@
-//
-//  Release.xcconfig
-//  SimpleGeo
-//
-
-#include "Shared.xcconfig"
-
-VALIDATE_PRODUCT = YES
-COPY_PHASE_STRIP = YES
