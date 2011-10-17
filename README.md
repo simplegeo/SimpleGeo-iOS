@@ -13,3 +13,16 @@ This app demonstrates how to integrate [`SimpleGeo.framework`](https://github.co
 2. Rename `Resources/Credentials_template.h` to `Credentials.h` and provide your SimpleGeo OAuth key and secret.
 
 3. Start coding!
+
+## Getting Started via the Terminal
+
+1. `git clone git@github.com:simplegeo/SimpleGeo-iOS.git`
+
+2. `cd SimpleGeo-iOS/Resources/`
+
+3. `git clone -b framework-ios git@github.com:simplegeo/SimpleGeo.framework.git`
+
+4. `cp Credentials_template.h Credentials.h`
+
+5. `vi Credentials.h` (add your credentials)
+
